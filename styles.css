@@ -19,6 +19,12 @@ body {
   font-size: 18px;
 }
 
+.box1 {
+  text-decoration: none;
+  font-weight: bold;
+  color: #6070ff;
+}
+
 .headline {
   display: flex;
   color: #172b4d;

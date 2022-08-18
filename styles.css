@@ -33,13 +33,13 @@ body {
 
 .footer {
   display: flex;
-  color: #7F8Cff;
+  color: #7F8cff;
   font-size: 16px;
 }
 
 ul {
   list-style-type: none;
-}    
+}
 
 .socialicons {
   display: flex;

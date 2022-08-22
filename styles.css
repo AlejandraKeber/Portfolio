@@ -119,12 +119,17 @@ ul {
 }
 
 .smallbuttons {
-  display: flex;
+  /*display: flex;*/
   text-align: left;
   gap: 15px;
   border: none;
   margin-left: 16px;
   padding-top: 10px;
+}
+
+.smallbuttons li {
+  float: left;
+  display: inline;
 }
 
 .button-small {

@@ -30,6 +30,11 @@ Javascript, HTML and CSS
 - Twitter: @KeberAlejandra
 - LinkedIn: www.linkedin.com/in/alejandra-keber
 
+👤 Autor2: Mahdia Naiebi
+- GitHub: @MAH001
+- Twitter: @mahdia00734562
+- LinkedIn: www.linkedin.com/in/mahdia
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 

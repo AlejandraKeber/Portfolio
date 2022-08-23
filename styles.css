@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 body {
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   background-image: url(./Images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   max-width: 375px;
@@ -27,15 +27,21 @@ body {
 
 .headline {
   display: flex;
+  font-family: 'poppins', sans-serif;
   color: #172b4d;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 750;
 }
 
 .headlinecont {
   display: flex;
+  font-family: 'poppins', sans-serif;
   color: #344563;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  height: 146px;
 }
 
 .footer {
@@ -163,16 +169,22 @@ ul {
 }
 
 .final-headline {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  line-height: 52px;
   margin-left: 24px;
   margin-top: 114px;
   color: #172b4d;
 }
 
 .final-cont {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
   color: #344563;
   margin-left: 24px;
 }
@@ -220,6 +232,7 @@ ul {
   background-image: url(./bg.png);
   background-repeat: no-repeat;
   background-position: 160px 40px;
+  margin-top: 50px;
 }
 
 .content {
@@ -274,6 +287,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   color: #172b4d;
+  padding-left: 10px;
 }
 
 textarea {
@@ -284,14 +298,15 @@ textarea {
 }
 
 textarea::placeholder {
-  font-family: inherit;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172b4d;
+  color: #b3bac5;
+  padding: 15px 38px 15px 16px;
 }
 
 .submit {
@@ -314,6 +329,7 @@ textarea::placeholder {
   top: 5317px;
   background: #fff;
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 .submit:hover {

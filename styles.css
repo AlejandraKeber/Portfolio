@@ -223,9 +223,9 @@ ul {
 }
 
 .content {
-display: flex;
-justify-content: space-around;
-flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .content h2 {
@@ -249,7 +249,7 @@ flex-direction: column;
   color: #ebebff;
 }
 
-fieldset{
+fieldset {
   border: none;
 }
 
@@ -279,7 +279,7 @@ input::placeholder {
 }
 
 textarea {
-  background: #ffffff;
+  background: #fff;
   border: none;
   border-radius: 8px;
   margin: 10px;
@@ -297,30 +297,28 @@ textarea::placeholder {
 }
 
 .submit {
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-color: #6070FF;
-border: none;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-width: 140px;
-height: 48px;
-left: 24px;
-top: 5317px;
-background: #FFFFFF;
-border-radius: 8px;
- }
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  border: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  left: 24px;
+  top: 5317px;
+  background: #fff;
+  border-radius: 8px;
+}
 
- .submit:hover {
-   background-color: #6070FF;
-   color: #fff;
+.submit:hover {
+  background-color: #6070ff;
+  color: #fff; 
  }

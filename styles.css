@@ -233,7 +233,7 @@ ul {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   align-items: center;
   margin-top: 100px;
@@ -256,12 +256,10 @@ fieldset {
 input {
   display: flex;
   justify-content: flex-start;
-  background: #ffffff;
+  background: #fff;
   border: none;
   border-radius: 8px;
   height: 48px;
-  left: 0px;
-  right: 0px;
   top: calc(50% - 48px / 2);
   margin: 10px;
   width: 327px;
@@ -286,7 +284,7 @@ textarea {
 }
 
 textarea::placeholder {
-  font-family: "Poppins";
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;

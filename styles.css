@@ -405,7 +405,6 @@ textarea::placeholder {
     background-size: contain;
     height: 798px;
     background-color: #fff;
-    display: ;
   }
 
   .wrapper {
@@ -481,6 +480,7 @@ textarea::placeholder {
     padding-left: 10px;
     padding-right: 10px;
   }
+  
   .headline-work {
     font-weight: 700;
     font-size: 40px;

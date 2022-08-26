@@ -95,7 +95,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-  margin-top: 150px;
   margin: 114px 24px 88px 24px;
 }
 
@@ -297,7 +296,6 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  justify-content: space-around;
   height: auto;
 }
 
@@ -401,14 +399,6 @@ textarea::placeholder {
 }
 
 @media (min-width: 768px) {
-  .box1 {
-    margin-left: 100px;
-  }
-
-  .box3 {
-    margin-right: 100px;
-  }
-
   .main {
     background-image: url(./Images/Header-big.png);
     background-repeat: no-repeat;
@@ -422,11 +412,11 @@ textarea::placeholder {
     width: auto;
   }
 
-  box1 {
+  .box1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    padding-left: 200px;
+    padding-left: 250px;
   }
 
   .box2 {
@@ -437,7 +427,8 @@ textarea::placeholder {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 12px
+    gap: 12px;
+    margin-right: 100px;
   }
 
   .box3 a {
@@ -483,7 +474,7 @@ textarea::placeholder {
   .headline-work {
     font-weight: 700;
     font-size: 40px;
-    line-height: 52pxx;
+    line-height: 52px;
     color: #091e42;
   }
 
@@ -516,7 +507,7 @@ textarea::placeholder {
   }
 
   #mobile {
-    display: none
+    display: none;
   }
 
   .mob {
@@ -632,10 +623,11 @@ textarea::placeholder {
   }
 
   #desktop {
-    display: none
+    display: none;
   }
 
   .desk {
     display: none;
   }
+  
 }

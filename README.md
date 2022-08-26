@@ -25,15 +25,10 @@ Javascript, HTML and CSS
 - The 2 sections you need to build for this project are:  the tool bar and the headline section
 
 **Authors**
-👤 Autor1: Alejandra Keber Maggi
-- GitHub: @AlejandraKeber
+👤 Autor1: Alejandra Keber Maggi 
+- [GitHub:](https://github.com/AlejandraKeber) @AlejandraKeber
 - Twitter: @KeberAlejandra
-- LinkedIn: www.linkedin.com/in/alejandra-keber
-
-👤 Autor2: Mahdia Naiebi
-- GitHub: @MAH001
-- Twitter: @mahdia00734562
-- LinkedIn: www.linkedin.com/in/mahdia
+- [LinkedIn:](www.linkedin.com/in/alejandra-keber) www.linkedin.com/in/alejandra-keber
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!

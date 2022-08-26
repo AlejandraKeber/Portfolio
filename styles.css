@@ -403,9 +403,9 @@ textarea::placeholder {
     background-image: url(./Images/Header-big.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 916px;
+    height: 798px;
     background-color: #fff;
-    background-position: 150px;
+    display: ;
   }
 
   .wrapper {
@@ -428,7 +428,7 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-right: 100px;
+    margin-right: 150px;
   }
 
   .box3 a {
@@ -443,6 +443,7 @@ textarea::placeholder {
     display: flex;
     justify-content: left;
     margin-left: 260px;
+    padding-top: 240px;
   }
 
   .headlinecont {
@@ -471,11 +472,22 @@ textarea::placeholder {
     margin: 80px 100px 80px 100px;
   }
 
+  .grid-item img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .project {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .headline-work {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
+    margin-bottom: 5px;
+    margin-top: 10px;
   }
 
   .canopy {
@@ -519,7 +531,7 @@ textarea::placeholder {
     flex-direction: row-reverse;
   }
 
-  .sec3 {
+  .sec4 {
     display: flex;
     flex-direction: row-reverse;
   }

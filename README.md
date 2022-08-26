@@ -28,7 +28,7 @@ Javascript, HTML and CSS
 👤 Autor1: Alejandra Keber Maggi 
 - [GitHub:](https://github.com/AlejandraKeber) @AlejandraKeber
 - Twitter: @KeberAlejandra
-- [LinkedIn:](www.linkedin.com/in/alejandra-keber) www.linkedin.com/in/alejandra-keber
+- [LinkedIn:](www.linkedin.com/in/alejandra-keber) Alejandra Keber
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!

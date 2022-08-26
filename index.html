@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <title>Portfolio setup and mobile first</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Portfolio setup and mobile first</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <a class=  "box1" href="https://www.github.com/AlejandraKeber">Alejandra</a>
-            <a class="box2" href="#Menu"><img src="./Images/Navbarmenu.png" alt="Menu"></a>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <a class="box1" href="https://www.github.com/AlejandraKeber">Alejandra</a>
+                <a class="box2" href="#Menu"><img src="./Images/Navbarmenu.png" alt="Menu"></a>
+                <ul class="box3">
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
-            <section>
+            <section class="main">
                 <div>
                     <h1 class="headline">I'm Alejandra! <br>Glad to see you!</h1>
-                    <p class="headlinecont">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                    <p class="headlinecont">I’m a software developer! I can help you build a product , feature or
+                        website Look through some of my work and experience! If you like what you see and have a project
+                        you need coded, don’t hestiate to contact me.</p>
                 </div>
                 <div>
                     <h6 class="footer">LET'S CONNECT</h6>
                     <ul class="socialicons">
-                        <li><a class="image" href="https://www.twitter.com/home"><img src="./Images/Socialmedia/Vector.png" alt="twitter icon"></a></li>
-                        <li><a class="image" href="https://www.linkedin.com/in/alejandra-keber"><img src="./Images/Socialmedia/Linkedinicon.jpg" alt="likedin icon"></a></li>
-                        <li><a class="image" href="https://www.microverse.org/"><img src="./Images/Socialmedia/Vector(1).png" alt="microverse icon"></a></li>
-                        <li><a class="image" href="https://www.github.com/AlejandraKeber"><img src="./Images/Socialmedia/Vector(2).png" alt="github icon"></a></li>
-                        <li><a class="image" href="https://www.google.com/"><img src="./Images/Socialmedia/Vector(3).png" alt="vector3 icon"></a></li>
+                        <li><a class="image" href="https://www.twitter.com/home"><img
+                                    src="./Images/Socialmedia/Vector.png" alt="twitter icon"></a></li>
+                        <li><a class="image" href="https://www.linkedin.com/in/alejandra-keber"><img
+                                    src="./Images/Socialmedia/Linkedinicon.jpg" alt="likedin icon"></a></li>
+                        <li><a class="image" href="https://www.microverse.org/"><img
+                                    src="./Images/Socialmedia/Vector(1).png" alt="microverse icon"></a></li>
+                        <li><a class="image" href="https://www.github.com/AlejandraKeber"><img
+                                    src="./Images/Socialmedia/Vector(2).png" alt="github icon"></a></li>
+                        <li><a class="image" href="https://www.google.com/"><img
+                                    src="./Images/Socialmedia/Vector(3).png" alt="vector3 icon"></a></li>
                     </ul>
                 </div>
             </section>
@@ -36,158 +52,200 @@
         <section>
             <div class="grid-container">
 
-                <div class="grid-item">
-                    <div class="work-image"><img src="./Images/Works/SnapshootPortfolio1.png" alt="work image"></div>
-                    <h2 class="headline-work">Tonic</h2>   
-                    <ul class="headline-detail">
-                        <li class="canopy">CANOPY</li>
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">Back End Dev</li> 
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">2015</li>                                
-                    </ul>        
-                    <p class="headlinecont-work">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <div>                                
+                <div class="grid-item sec1">
+                    <img class="work-image mob" src="./Images/Works/SnapshootPortfolio1.png" alt="work image">
+                    <img class="work-image desk" src="./Images/Works/Snapshoot-Portfolio-Desktop.png" alt="work image">
+                    <div class="project">
+                        <h2 class="headline-work">Tonic</h2>
+                        <div class="headline-detail">
+                            <p class="canopy">CANOPY</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev">Back End Dev</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev">2015</p>
+                        </div>
+
+                        <p class="headlinecont-work">A daily selection of privately personalized reads; no accounts or
+                            sign-ups required.</p>
+
                         <ul class="smallbuttons">
                             <li><button class="button-small">html</button></li>
                             <li><button class="button-small">css</button></li>
                             <li><button class="button-small">JavaScript</button></li>
                         </ul>
+                        <div><button class="button-big" type="submit">See Project</button></div>
                     </div>
-                    <div><button class="button-big">See Project</button></div>
                 </div>
-                
-                <div class="grid-item">
-                    <div class="work-image"><img src="./Images/Works/SnapshootPortfolio2.png" alt="work image"></div>
-                    <h2 class="headline-work">Multi-Post Stories</h2>   
-                    <ul class="headline-detail">
-                        <li class="canopy">CANOPY</li>
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">Back End Dev</li> 
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">2015</li>                                
-                    </ul>        
-                    <p class="headlinecont-work">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <div>                                
+
+                <div class="grid-item sec2">
+                    <div class="workimgages">
+                        <img class="work-image mob" src="./Images/Works/SnapshootPortfolio2.png" alt="work image">
+                        <img class="work-image desk" src="./Images/Works/Snapshoot-Portfolio2-Desktop.png"
+                            alt="work image">
+                    </div>
+                    <div class="project">
+                        <h2 class="headline-work">Multi-Post Stories</h2>
+                        <div class="headline-detail">
+                            <p class="canopy mob">CANOPY</p>
+                            <p class="canopy desk">FACEBOOK</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev mob">Back End Dev</p>
+                            <p class="backenddev desk">Full Stack Dev</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev">2015</p>
+                        </div>
+                        <p class="headlinecont-work mob">A daily selection of privately personalized reads; no accounts
+                            or
+                            sign-ups required.</p>
+                        <p class="headlinecont-work desk">Experimental content creation feature that allows users to add
+                            to an existing story over the course of a day without spamming their friends.</p>
                         <ul class="smallbuttons">
                             <li><button class="button-small">html</button></li>
+                            <li><button class="button-small desk">Ruby on rails</button></li>
                             <li><button class="button-small">css</button></li>
                             <li><button class="button-small">JavaScript</button></li>
                         </ul>
+
+                        <div><button class="button-big">See Project</button></div>
                     </div>
-                    <div><button class="button-big">See Project</button></div>
                 </div>
-                
-                <div class="grid-item">
-                    <div class="work-image"><img src="./Images/Works/SnapshootPortfolio3.png" alt="work image"></div>
-                    <h2 class="headline-work">Tonic</h2>   
-                    <ul class="headline-detail">
-                        <li class="canopy">CANOPY</li>
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">Back End Dev</li> 
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">2015</li>                                
-                    </ul>        
-                    <p class="headlinecont-work">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <div>                                
+
+                <div class="grid-item sec3">
+                    <img class="work-image mob" src="./Images/Works/SnapshootPortfolio3.png" alt="work image">
+                    <img class="work-image desk" src="./Images/Works/Snapshoot-Portfolio3-Desktop.png" alt="work image">
+                    <div class="project">
+                        <h2 class="headline-work mob">Tonic</h2>
+                        <h2 class="headline-work desk">Facebook 360</h2>
+                        <div class="headline-detail">
+                            <p class="canopy mob">CANOPY</p>
+                            <p class="canopy desk">FACEBOOK</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev mob">Back End Dev</p>
+                            <p class="backenddev desk">Full Stack Dev</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev">2015</p>
+
+                        </div>
+                        <p class="headlinecont-work mob">A daily selection of privately personalized reads; no accounts
+                            or
+                            sign-ups required.</p>
+                        <p class="headlinecont-work desk">Exploring the future of media in Facebook's first Virtual
+                            Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
                         <ul class="smallbuttons">
                             <li><button class="button-small">html</button></li>
+                            <li><button class="button-small desk">Ruby on rails</button></li>
                             <li><button class="button-small">css</button></li>
                             <li><button class="button-small">JavaScript</button></li>
                         </ul>
+                        <div><button class="button-big" type="submit">See Project</button></div>
                     </div>
-                    <div><button class="button-big">See Project</button></div>
                 </div>
-                
-                <div class="grid-item">
-                    <div class="work-image"><img src="./Images/Works/SnapshootPortfolio4.png" alt="work image"></div>
-                    <h2 class="headline-work">Multi-Post Stories</h2>   
-                    <ul class="headline-detail">
-                        <li class="canopy">CANOPY</li>
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">Back End Dev</li> 
-                        <li><img src="./Images/Works/Counter.png" alt="counter"></li>
-                        <li class="backenddev">2015</li>                                
-                    </ul>        
-                    <p class="headlinecont-work">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <div>                                
+
+                <div class="grid-item sec4">
+                    <img class="work-image mob" src="./Images/Works/SnapshootPortfolio4.png" alt="work image">
+                    <img class="work-image desk" src="./Images/Works/Snapshoot-Portfolio4-Destop.png" alt="work image">
+                    <div class="project">
+                        <h2 class="headline-work mob">Multi-Post Stories</h2>
+                        <h2 class="headline-work desk">Uber Navigation</h2>
+                        <div class="headline-detail">
+                            <p class="canopy mob">CANOPY</p>
+                            <p class="canopy desk">Uber</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev mob">Back End Dev</p>
+                            <p class="backenddev desk">Lead Developer</p>
+                            <img src="./Images/Works/Counter.png" alt="counter">
+                            <p class="backenddev mob">2015</p>
+                            <p class="backenddev desk">2018</p>
+                        </div>
+                        <p class="headlinecont-work mob">A daily selection of privately personalized reads; no accounts
+                            or
+                            sign-ups required.</p>
+                        <p class="headlinecont-work desk">A smart assistant to make driving more safe, efficient, and
+                            fun by unlocking your most expensive computer: your car.</p>
                         <ul class="smallbuttons">
                             <li><button class="button-small">html</button></li>
+                            <li><button class="button-small desk">Ruby on rails</button></li>
                             <li><button class="button-small">css</button></li>
                             <li><button class="button-small">JavaScript</button></li>
                         </ul>
+
+                        <div><button class="button-big">See Project</button></div>
                     </div>
-                    <div><button class="button-big">See Project</button></div>
                 </div>
             </div>
-
         </section>
-    
+
         <section>
             <div class="grid-container2">
                 <div class="grid-item2">
-                    <h1 class="final-headline">About <br>Myself</h1>
-                    <p class="final-cont">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                    <div class="about-myself">
+                        <h2 class="final-headline">About <br>Myself</h2>
+                        <p class="final-cont">I’m a software developer! I can help you build a product , feature or
+                            website
+                            Look through some of my work and experience! If you like what you see and have a project you
+                            need coded, don’t hestiate to contact me.</p>
+                        <h6 class="connect">LET'S CONNECT</h6>
+                        <ul class="socialicons2">
+                            <li><a class="image" href="https://www.twitter.com/home"><img
+                                        src="./Images/Socialmedia/Vector.png" alt="twitter icon"></a></li>
+                            <li><a class="image" href="https://www.linkedin.com/in/alejandra-keber"><img
+                                        src="./Images/Socialmedia/Linkedinicon.jpg" alt="likedin icon"></a></li>
+                            <li><a class="image" href="https://www.microverse.org/"><img
+                                        src="./Images/Socialmedia/Vector(1).png" alt="microverse icon"></a></li>
+                            <li><a class="image" href="https://www.github.com/AlejandraKeber"><img
+                                        src="./Images/Socialmedia/Vector(2).png" alt="github icon"></a></li>
+                            <li><a class="image" href="https://www.google.com/"><img
+                                        src="./Images/Socialmedia/Vector(3).png" alt="vector3 icon"></a></li>
+                        </ul>
+                        <div><button class="button-big">Get my resume</button></div>
+                    </div>
+                    <div class="about-myself-languages">
+                        <ul class="languages">
+                            <li>
+                                Languages
+                            </li>
+                            <li> <img class="dropdown-image" src="./Images/Union1.png" alt="arrow">
+                            </li>
+                        </ul>
+                        <ul class="lang">
+                            <li class="langli"><img src="./Images/Languages/LogoJS.png" alt="JS">JavaScript</li>
+                            <li class="langli"><img src="./Images/Languages/LogoHTML.png" alt="HTML">HTML</li>
+                            <li class="langli"><img src="./Images/Languages/LogoCSS.png" alt="CSS">CSS</li>
+                        </ul>
+                        <ul class="framework">
+                            <li>
+                                Frameworks
+                            </li>
+                            <li><img src="./Images/Union2.png" alt="arrow"></li>
+                        </ul>
+                        <ul class="framework">
+                            <li>
+                                Skills
+                            </li>
+                            <li><img src="./Images/Union2.png" alt="arrow"></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <h6 class="connect">LET'S CONNECT</h6>
-                <ul class="socialicons2">
-                    <li><a class="image" href="https://www.twitter.com/home"><img src="./Images/Socialmedia/Vector.png" alt="twitter icon"></a></li>
-                    <li><a class="image" href="https://www.linkedin.com/in/alejandra-keber"><img src="./Images/Socialmedia/Linkedinicon.jpg" alt="likedin icon"></a></li>
-                    <li><a class="image" href="https://www.microverse.org/"><img src="./Images/Socialmedia/Vector(1).png" alt="microverse icon"></a></li>
-                    <li><a class="image" href="https://www.github.com/AlejandraKeber"><img src="./Images/Socialmedia/Vector(2).png" alt="github icon"></a></li>
-                    <li><a class="image" href="https://www.google.com/"><img src="./Images/Socialmedia/Vector(3).png" alt="vector3 icon"></a></li>
-                </ul>
-                
-                <div><button class="button-big">Get my resume</button></div>
-                
-                <ul class="languages">
-                    <li><p>Languages</p></li>
-                    <li><img src="./Images/Union1.png" alt="arrow"></li>
-                </ul>
-                <ul class="lang">
-                    <li><img src="./Images/Languages/LogoJS.png" alt="JS"></li>
-                    <li><p>JavaScript</p></li>
-                </ul>
-                <ul class="lang">
-                    <li><img src="./Images/Languages/LogoHTML.png" alt="JS"></li>
-                    <li><p>HTML</p></li>
-                </ul>
-                <ul class="lang">
-                    <li><img src="./Images/Languages/LogoCSS.png" alt="JS"></li>
-                    <li><p>CSS</p></li>
-                </ul>
-                <ul class="languages">
-                    <li><p>Frameworks</p></li>
-                    <li><img src="./Images/Union2.png" alt="arrow"></li>
-                </ul>
-                <ul class="languages">
-                    <li><p>Skills</p></li>
-                    <li><img src="./Images/Union2.png" alt="arrow"></li>
-                </ul>
-                
             </div>
         </section>
         <section class="contactform">
             <div class="content">
-             <h2>Contact me</h2>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p></div>
-    <form action="https://formspree.io/f/mzbwzepn" method="post">
-        <fieldset>
-            <label class="name">
-                <input name="name" type="text" maxlength="30" placeholder="Alejandra" required>
-            </label>
-            <label>
-                <input name="email" type="email" placeholder="alejandrakeber@gmail.com" required>
-            </label>
-            <label>
-                <textarea placeholder="Write your message here" maxlength="500" rows="10" cols="39" required></textarea>
-            </label>
-            <label>
-                <button class="submit" type="submit">Get It Touch</button>
-            </label>
-        </fieldset>
-    </form>
-    </section>
+                <h2 class="contactme-title">Contact me</h2>
+                <p class="contactme-detail">If you have an application you are interested in developing, a feature that
+                    you need built or a
+                    project that needs coding. I’d love to help with it</p>
+                <form action="https://formspree.io/f/mzbwzepn" method="post">
+                    <fieldset class="finalforms">
+                        <input name="name" type="text" maxlength="30" placeholder="Alejandra" required>
+                        <input name="email" type="email" placeholder="alejandrakeber@gmail.com" required>
+                        <textarea placeholder="Write your message here" maxlength="500" rows="10" cols="39"
+                            required></textarea>
+                        <button class="submit" type="submit">Get It Touch</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

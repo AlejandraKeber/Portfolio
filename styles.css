@@ -413,7 +413,8 @@ textarea::placeholder {
     background-image: url(./Images/Header-big.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 916px background-color: #fff;
+    height: 916px;
+    background-color: #fff;
     background-position: 150px;
   }
 

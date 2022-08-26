@@ -268,7 +268,8 @@ ul {
 .lang {
   display: flex;
   flex-direction: column;
-  align-items: flex-start font-size: 15px;
+  align-items: flex-start;
+  font-size: 15px;
   padding: 12px;
   gap: 12px;
   margin-left: 24px;

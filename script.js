@@ -12,3 +12,11 @@ closeMenu.addEventListener('click', () => {
   modalMenu.style.left = '-100%';
 });
 
+ modalMenu.forEach((n) =>
+   n.addEventListener('click', () => {
+     humburger.classList.remove('active');
+     nav.classList.remove('active');
+   })
+ );
+}
+

@@ -14,12 +14,15 @@
         <header>
             <nav class="navbar">
                 <a class="box1" href="https://www.github.com/AlejandraKeber">Alejandra</a>
-                <a class="box2" href="#Menu"><img src="./Images/Navbarmenu.png" alt="Menu"></a>
-                <ul class="box3">
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                <ul class="nav-items">
+                    <li class="close"><img src="./Images/x-icon.png" alt="close menu"></li>
+                    <li class="Portfolio"><a href="#Portfolio">Portfolio</a></li>
+                    <li class="About"><a href="#About">About</a></li>
+                    <li class="Contact"><a href="#Contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <a href="#Menu"><img src="./Images/Navbarmenu.png" alt="Menu"></a>
+                </div>
             </nav>
         </header>
 
@@ -50,7 +53,7 @@
         </main>
 
         <section>
-            <div class="grid-container">
+            <div id="Portfolio" class="grid-container">
 
                 <div class="grid-item sec1">
                     <img class="work-image mob" src="./Images/Works/SnapshootPortfolio1.png" alt="work image">
@@ -176,7 +179,7 @@
         </section>
 
         <section>
-            <div class="grid-container2">
+            <div id="About" class="grid-container2">
                 <div class="grid-item2">
                     <div class="about-myself">
                         <h2 class="final-headline">About <br>Myself</h2>
@@ -228,7 +231,7 @@
                 </div>
             </div>
         </section>
-        <section class="contactform">
+        <section id="Contact" class="contactform">
             <div class="content">
                 <h2 class="contactme-title">Contact me</h2>
                 <p class="contactme-detail">If you have an application you are interested in developing, a feature that
@@ -246,6 +249,9 @@
             </div>
         </section>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -24,9 +24,3 @@ const closeContact = document.querySelector('.Contact');
 closeContact.addEventListener('click', () => {
   modalMenu.style.left = '-100%';
 });
-
-/* modalMenu.forEach((n) =>
-  n.addEventListener('click', () => {
-   hamburger.classList.remove('active');
-   nav-items.classList.remove('active');
-  })); */

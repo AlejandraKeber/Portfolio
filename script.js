@@ -1,4 +1,3 @@
-
 const hamburger = document.querySelector('.hamburger');
 const modalMenu = document.querySelector('.nav-items');
 hamburger.addEventListener('click', () => {

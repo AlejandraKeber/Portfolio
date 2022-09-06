@@ -29,7 +29,9 @@ body {
 .nav-items {
   display: flex;
   flex-direction: row;
-  gap: 10px
+  gap: 10px;
+  margin-right: 120px;
+  margin-top: 24px;
 }
 
 .nav-items a {
@@ -102,7 +104,7 @@ body {
 
 ul {
   list-style-type: none;
-  padding-left: 20x;
+  padding-left: 40px;
 }
 
 .socialicons {
@@ -130,7 +132,7 @@ ul {
 
 .grid-item img {
   transition: transform 0.5s ease-in;
-  transition-delay: 0.2;
+  transition-delay: 0.2s;
 }
 
 .grid-item img:hover {
@@ -646,7 +648,6 @@ textarea::placeholder {
     padding: 40px;
     display: flex;
     flex-direction: column;
-  
   }
 
   .nav-items a {

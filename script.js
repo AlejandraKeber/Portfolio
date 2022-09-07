@@ -30,7 +30,7 @@ const projects = [
     details: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tec: ['html', 'css', 'javaScript'],
-    image: './Images/Works/Snapshoot-Portfolio-Desktop.png',
+    image: './Images/Works/SnapshootPortfolio1.png',
     link: 'https://www.github.com',
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     details: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './Images/Works/Snapshoot-Portfolio2-Desktop.png',
+    image: './Images/Works/SnapshootPortfolio2.png',
     link: 'https://www.github.com',
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     details: ['CANOPY', 'Full Stack Dev', '2015'],
     description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './Images/Works/Snapshoot-Portfolio3-Desktop.png',
+    image: './Images/Works/SnapshootPortfolio3.png',
     link: 'https://www.github.com',
   },
   {
@@ -54,42 +54,81 @@ const projects = [
     details: ['Uber', 'Lead Developer', '2018'],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './Images/Works/Snapshoot-Portfolio4-Destop.png',
+    image: './Images/Works/SnapshootPortfolio4.png',
     link: 'https://www.github.com',
   }
 ];
 
 for (let i=0; i<projects.length; i++) {
-  let cards = document.createElement("div");
+  const cards = document.createElement("div");
   cards.classList.add("cards");
 
-  let projectinfo = document.createElement("div");
-  projectinfo.classList.add("projectinfo");
-  projectinfo.classList.add("sec1"); 
+  const projectcontainer = document.createElement("div");
+  projectcontainer.classList.add("projectcontainer");
+  cards.appendChild(projectcontainer);
 
-  let img = document.createElement('img');
-  img.src = projects[i].image;
-  img.alt = 'project image';
+  const imgContainer = document.createElement('div');
+  imgContainer.classList.add('img-container');
+  const projectimg = document.createElement("img");
+  projectimg.src = projects[i].image;
+  projectimg.alt = 'project image';
+  projectcontainer.appendChild(imgContainer);
+  imgContainer.appendChild(projectimg);
 
-  let projecttitle = document.createElement("h2");
+  const projectdetails = document.createElement("div");
+  projectdetails.classList.add("projectdetails");
+  projectcontainer.appendChild(projectdetails);
+
+  const projecttitle = document.createElement("h2");
   projecttitle.classList.add("projecttitle");
   projecttitle.textContent = projects[i].title;
+  projectdetails.appendChild(projecttitle);
 
-  let projectdetail = document.createElement("div");
-  projectdetail.classList.add("projectdetail");
+  const projectdet = document.createElement("ul");
+  projectdet.classList.add("projectdet");
+  for (let count = 0; count < projects[i].details.length; count++) {
+    const item = document.createElement("li");
+    const company = document.createElement("p");
+    const text = document.createTextNode(projects[i].details[count]);
+    company.appendChild(text);
+    item.appendChild(company);
+    projectdet.appendChild(item);
+  }
+  projectdetails.appendChild(projectdet);
 
-  let details = document.createElement("p")
-  details.classList.add("details")
-  details.textContent = projects[i].details;
-
-  let headlinecont_work = document.createElement("p")
-  headlinecont_work.classList.add("headlinecont_work")
+  const headlinecont_work = document.createElement("p");
+  headlinecont_work.classList.add("headlinecont_work");
   headlinecont_work.textContent = projects[i].description;
+  projectdetails.appendChild(headlinecont_work);
 
-  projectinfo.appendChild(projecttitle);
-  projectinfo.appendChild(projectdetail);
-  projectinfo.appendChild(headlinecont_work);
+  const smallbuttons = document.createElement("ul");
+  smallbuttons.classList.add("smallbuttons");
+  for (let counter = 0; counter < projects[i].tec.length; counter++) {
+    const item = document.createElement("li");
+    const text = document.createTextNode(projects[i].tec[counter]);
+    item.appendChild(text);
+    item.classList.add("button_small");
+    smallbuttons.appendChild(item);
+  }
+  projectdetails.appendChild(smallbuttons);
+
+  const button_big = document.createElement("button");
+  button_big.classList.add("button_big")
+  button_big.setAttribute('type', 'button');
+  const butText = document.createTextNode('See Project');
+  button_big.appendChild(butText)
+  projectdetails.appendChild(button_big);
+
+  if (i % 2 === 0) {
+    projectcontainer.appendChild(imgContainer);
+    projectcontainer.appendChild(projectdetails);
+  } else {
+    projectcontainer.appendChild(projectdetails);
+    projectcontainer.appendChild(imgContainer);
+  }
+
+  document.querySelector(".cards").appendChild(cards);
 
 
-  document.querySelector(".cards").appendChild(cards);  
+  
 }

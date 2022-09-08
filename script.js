@@ -64,20 +64,20 @@ const projects = [
     link: 'https://www.github.com',
     linkLive: 'https://alejandrakeber.github.io/',
     linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
-  }
+  },
 ];
 
-for (let i=0; i<projects.length; i += 1) {
-  const cards = document.createElement("div");
-  cards.classList.add("cards");
+for (let i = 0; i < projects.length; i += 1) {
+  const cards = document.createElement('div');
+  cards.classList.add('cards');
 
-  const projectcontainer = document.createElement("div");
-  projectcontainer.classList.add("projectcontainer");
+  const projectcontainer = document.createElement('div');
+  projectcontainer.classList.add('projectcontainer');
   cards.appendChild(projectcontainer);
 
   const imgContainer = document.createElement('div');
   imgContainer.classList.add('img-container');
-  const projectimg = document.createElement("img");
+  const projectimg = document.createElement('img');
   projectimg.src = projects[i].image;
   projectimg.alt = 'project image';
   projectimg.style.width = '100%';
@@ -85,20 +85,20 @@ for (let i=0; i<projects.length; i += 1) {
   projectcontainer.appendChild(imgContainer);
   imgContainer.appendChild(projectimg);
 
-  const projectdetails = document.createElement("div");
-  projectdetails.classList.add("projectdetails");
+  const projectdetails = document.createElement('div');
+  projectdetails.classList.add('projectdetails');
   projectcontainer.appendChild(projectdetails);
 
-  const projecttitle = document.createElement("h2");
-  projecttitle.classList.add("projecttitle");
+  const projecttitle = document.createElement('h2');
+  projecttitle.classList.add('projecttitle');
   projecttitle.textContent = projects[i].title;
   projectdetails.appendChild(projecttitle);
 
-  const projectdet = document.createElement("ul");
-  projectdet.classList.add("projectdet");
-  for (let count = 0; count < projects[i].details.length; count++) {
-    const item = document.createElement("li");
-    const company = document.createElement("p");
+  const projectdet = document.createElement('ul');
+  projectdet.classList.add('projectdet');
+  for (let count = 0; count < projects[i].details.length; count += 1) {
+    const item = document.createElement('li');
+    const company = document.createElement('p');
     const text = document.createTextNode(projects[i].details[count]);
     company.appendChild(text);
     item.appendChild(company);
@@ -106,10 +106,10 @@ for (let i=0; i<projects.length; i += 1) {
   }
   projectdetails.appendChild(projectdet);
 
-  const headlinecont_work = document.createElement("p");
-  headlinecont_work.classList.add("headlinecont_work");
-  headlinecont_work.textContent = projects[i].description;
-  projectdetails.appendChild(headlinecont_work);
+  const headlinecontwork = document.createElement('p');
+  headlinecontwork.classList.add('headlinecont_work');
+  headlinecontwork.textContent = projects[i].description;
+  projectdetails.appendChild(headlinecontwork);
 
   const smallbuttons = document.createElement("ul");
   smallbuttons.classList.add("smallbuttons");
@@ -122,12 +122,12 @@ for (let i=0; i<projects.length; i += 1) {
   }
   projectdetails.appendChild(smallbuttons);
 
-  const button_big = document.createElement("button");
-  button_big.classList.add("button_big")
-  button_big.setAttribute('type', 'button');
+  const buttonbig = document.createElement('button');
+  buttonbig.classList.add('button_big');
+  buttonbig.setAttribute('type', 'button');
   const butText = document.createTextNode('See Project');
-  button_big.appendChild(butText);
-  projectdetails.appendChild(button_big);
+  buttonbig.appendChild(butText);
+  projectdetails.appendChild(buttonbig);
 
   if (i % 2 === 0) {
     projectcontainer.appendChild(imgContainer);
@@ -137,7 +137,7 @@ for (let i=0; i<projects.length; i += 1) {
     projectcontainer.appendChild(imgContainer);
   }
 
-  document.querySelector(".cards").appendChild(cards);
+  document.querySelector('.cards').appendChild(cards);
 }
 
 const openPopup = document.querySelector('.button_big');
@@ -146,8 +146,8 @@ const closePopup = document.querySelector('.popclose');
 
 openPopup.addEventListener('click', () => {
   modalPopup.classList.add('show');
-}); 
+});
 
 closePopup.addEventListener('click', () => {
   modalPopup.classList.remove('show');
-}); 
+});

@@ -419,7 +419,7 @@ ul {
 }
 
 .btn {
-  color: hwb(223 18% 18%);
+  color: #6070ff;
   background-color: #fff;
   border: 1px solid #6070ff;
   padding: 8px 8px;
@@ -883,5 +883,4 @@ textarea::placeholder {
   .popbutton-big {
     margin-left: 1px;
   }
-  
 }

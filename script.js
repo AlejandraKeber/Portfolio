@@ -152,7 +152,7 @@ for (let index = 0; index < openPopup.length; index += 1) {
     modalPopup.querySelector('.popimge').src = projects[p].image;
     modalPopup.querySelector('.popdescrip').innerHTML = projects[p].description;
     modalPopup.querySelector('.live').href = projects[p].linkLive;
-    modalPopup.querySelector('.source').href = projects[p].linkUrl; 
+    modalPopup.querySelector('.source').href = projects[p].linkUrl;
     modalPopup.style.display = 'block';
   });
 }

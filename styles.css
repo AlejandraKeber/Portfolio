@@ -334,15 +334,13 @@ ul {
   position: fixed;
   background-color: rgba(128, 128, 128, 0.9);
   backdrop-filter: blur(3px);
-  margin-top: 50px; 
-  display: flex;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
 }
 
 .popupcard {
   background-color: #fff;
-  max-width: min(900px, 90%);
   border-radius: 8px;
   overflow-y: scroll;
   margin-left: 30px;
@@ -423,7 +421,7 @@ ul {
 .btn {
   color: hwb(223 18% 18%);
   background-color: #fff;
-  border: 1px solid hsl(234, 100%, 69%);
+  border: 1px solid #6070ff;
   padding: 8px 8px;
   border-radius: 6px;
   transition: 0.2s ease-in-out;
@@ -869,6 +867,7 @@ textarea::placeholder {
     display: flex;
     width: 40vh;
   }
+
   .popbuttons {
     float: right;
   }
@@ -883,5 +882,6 @@ textarea::placeholder {
 
   .popbutton-big {
     margin-left: 1px;
-  }    
+  }
+  
 }

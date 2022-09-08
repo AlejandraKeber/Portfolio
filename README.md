@@ -2,7 +2,8 @@
 
 Portfolio based in Figma Template 1
 
-**Built With**
+**Built With:**
+
 Javascript, HTML and CSS
 
 **Getting started:**
@@ -18,6 +19,7 @@ cd Project-setup-and-mobile-main
 - Please go to this link to deploy the webpage: [Portfolio](https://alejandrakeber.github.io/)
 
 **Authors**
+
 👤 Autor1: Alejandra Keber Maggi 
 - [GitHub:](https://github.com/AlejandraKeber) @AlejandraKeber
 - Twitter: @KeberAlejandra

@@ -29,6 +29,7 @@ const projects = [
     title: 'Tonic',
     details: ['CANOPY', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     tec: ['html', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio1.png',
     link: 'https://www.github.com',
@@ -39,6 +40,7 @@ const projects = [
     title: 'Mutli-Post Stories',
     details: ['FACEBOOK', 'Full Stack Dev', '2015'],
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio2.png',
     link: 'https://www.github.com',
@@ -49,6 +51,7 @@ const projects = [
     title: 'Facebook 360',
     details: ['CANOPY', 'Full Stack Dev', '2015'],
     description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio3.png',
     link: 'https://www.github.com',
@@ -59,6 +62,7 @@ const projects = [
     title: 'Uber Navigation',
     details: ['Uber', 'Lead Developer', '2018'],
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio4.png',
     link: 'https://www.github.com',
@@ -150,7 +154,7 @@ for (let index = 0; index < openPopup.length; index += 1) {
     const p = e.target.getAttribute('data-index');
     modalPopup.querySelector('.poptitle').innerHTML = projects[p].title;
     modalPopup.querySelector('.popimge').src = projects[p].image;
-    modalPopup.querySelector('.popdescrip').innerHTML = projects[p].description;
+    modalPopup.querySelector('.popdescrip').innerHTML = projects[p].popupdescription;
     modalPopup.querySelector('.live').href = projects[p].linkLive;
     modalPopup.querySelector('.source').href = projects[p].linkUrl;
     modalPopup.style.display = 'block';

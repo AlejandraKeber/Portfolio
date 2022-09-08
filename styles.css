@@ -868,7 +868,7 @@ textarea::placeholder {
     justify-content: left;
     width: 90%;
     height: auto;
-    margin: 16px, 30px, 16px, 30px;
+    margin: 16px 30px 16px 30px;
   }
 
   .sect {

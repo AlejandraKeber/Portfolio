@@ -32,6 +32,8 @@ const projects = [
     tec: ['html', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio1.png',
     link: 'https://www.github.com',
+    linkLive: 'https://alejandrakeber.github.io/',
+    linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
   },
   {
     title: 'Mutli-Post Stories',
@@ -40,6 +42,8 @@ const projects = [
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio2.png',
     link: 'https://www.github.com',
+    linkLive: 'https://alejandrakeber.github.io/',
+    linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
   },
   {
     title: 'Facebook 360',
@@ -48,6 +52,8 @@ const projects = [
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio3.png',
     link: 'https://www.github.com',
+    linkLive: 'https://alejandrakeber.github.io/',
+    linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
   },
   {
     title: 'Uber Navigation',
@@ -56,10 +62,12 @@ const projects = [
     tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
     image: './Images/Works/SnapshootPortfolio4.png',
     link: 'https://www.github.com',
+    linkLive: 'https://alejandrakeber.github.io/',
+    linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
   }
 ];
 
-for (let i=0; i<projects.length; i++) {
+for (let i=0; i<projects.length; i += 1) {
   const cards = document.createElement("div");
   cards.classList.add("cards");
 
@@ -72,6 +80,8 @@ for (let i=0; i<projects.length; i++) {
   const projectimg = document.createElement("img");
   projectimg.src = projects[i].image;
   projectimg.alt = 'project image';
+  projectimg.style.width = '100%';
+  projectimg.style.height = 'auto';
   projectcontainer.appendChild(imgContainer);
   imgContainer.appendChild(projectimg);
 
@@ -116,7 +126,7 @@ for (let i=0; i<projects.length; i++) {
   button_big.classList.add("button_big")
   button_big.setAttribute('type', 'button');
   const butText = document.createTextNode('See Project');
-  button_big.appendChild(butText)
+  button_big.appendChild(butText);
   projectdetails.appendChild(button_big);
 
   if (i % 2 === 0) {
@@ -128,7 +138,16 @@ for (let i=0; i<projects.length; i++) {
   }
 
   document.querySelector(".cards").appendChild(cards);
-
-
-  
 }
+
+const openPopup = document.querySelector('.button_big');
+const modalPopup = document.querySelector('.popupcont');
+const closePopup = document.querySelector('.popclose');
+
+openPopup.addEventListener('click', () => {
+  modalPopup.classList.add('show');
+}); 
+
+closePopup.addEventListener('click', () => {
+  modalPopup.classList.remove('show');
+}); 

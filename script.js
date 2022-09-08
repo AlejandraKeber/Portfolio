@@ -140,14 +140,23 @@ for (let i = 0; i < projects.length; i += 1) {
   document.querySelector('.cards').appendChild(cards);
 }
 
-const openPopup = document.querySelector('.button_big');
+const openPopup = document.querySelectorAll('.button_big');
 const modalPopup = document.querySelector('.popupcont');
-const closePopup = document.querySelector('.popclose');
+const closePopup = document.getElementById('closeModal');
 
-openPopup.addEventListener('click', () => {
-  modalPopup.classList.add('show');
-});
+for (let index = 0; index < openPopup.length; index += 1) {
+  openPopup[index].setAttribute('data-index', index);
+  openPopup[index].addEventListener('click', (e) => {
+    const p = e.target.getAttribute('data-index');
+    modalPopup.querySelector('.poptitle').innerHTML = projects[p].title;
+    modalPopup.querySelector('.popimge').src = projects[p].image;
+    modalPopup.querySelector('.popdescrip').innerHTML = projects[p].description;
+    modalPopup.querySelector('.live').href = projects[p].linkLive;
+    modalPopup.querySelector('.source').href = projects[p].linkUrl; 
+    modalPopup.style.display = 'block';
+  });
+}
 
 closePopup.addEventListener('click', () => {
-  modalPopup.classList.remove('show');
+  modalPopup.style.display = 'none';
 });

@@ -111,13 +111,13 @@ for (let i = 0; i < projects.length; i += 1) {
   headlinecontwork.textContent = projects[i].description;
   projectdetails.appendChild(headlinecontwork);
 
-  const smallbuttons = document.createElement("ul");
-  smallbuttons.classList.add("smallbuttons");
-  for (let counter = 0; counter < projects[i].tec.length; counter++) {
-    const item = document.createElement("li");
+  const smallbuttons = document.createElement('ul');
+  smallbuttons.classList.add('smallbuttons');
+  for (let counter = 0; counter < projects[i].tec.length; counter += 1) {
+    const item = document.createElement('li');
     const text = document.createTextNode(projects[i].tec[counter]);
     item.appendChild(text);
-    item.classList.add("button_small");
+    item.classList.add('button_small');
     smallbuttons.appendChild(item);
   }
   projectdetails.appendChild(smallbuttons);

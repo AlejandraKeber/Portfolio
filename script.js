@@ -174,5 +174,5 @@ submit.addEventListener('click', (event) => {
   if (email.value !== email.value.toLowerCase()) {
     event.preventDefault();
     document.querySelector('#error').innerHTML = 'Please write the email in lower case';
-  } 
+  }
 });

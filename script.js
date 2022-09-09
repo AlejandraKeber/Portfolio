@@ -144,6 +144,7 @@ for (let i = 0; i < projects.length; i += 1) {
   document.querySelector('.cards').appendChild(cards);
 }
 
+/* Popup window for project details */
 const openPopup = document.querySelectorAll('.button_big');
 const modalPopup = document.querySelector('.popupcont');
 const closePopup = document.getElementById('closeModal');
@@ -163,4 +164,15 @@ for (let index = 0; index < openPopup.length; index += 1) {
 
 closePopup.addEventListener('click', () => {
   modalPopup.style.display = 'none';
+});
+
+/* Validate email form */
+const email = document.getElementById('email');
+const submit = document.querySelector('.submit');
+
+submit.addEventListener('click', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    document.querySelector('#error').innerHTML = 'Please write the email in lower case';
+  }
 });

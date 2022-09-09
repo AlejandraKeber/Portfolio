@@ -510,6 +510,7 @@ input {
   align-items: center;
   margin: 10px;
   width: 327px;
+  margin-bottom: 1px;
 }
 
 input::placeholder {
@@ -567,6 +568,12 @@ textarea::placeholder {
 .submit:hover {
   background-color: #6070ff;
   color: #fff;
+}
+
+#error {
+  color: red;
+  margin-top: 1px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {

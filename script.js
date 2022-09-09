@@ -177,5 +177,5 @@ submit.addEventListener('click', (e)=> {
     document.querySelector('#error').innerHTML = 'Please write the email in lower case';
   }
 });
-
+  
 

@@ -334,7 +334,7 @@ ul {
   position: fixed;
   background-color: #c1c7d0a6;
   backdrop-filter: blur(3px);
-  margin-top: 50px;
+  height: 100vh;;
   justify-content: center;
   align-items: center;
 }
@@ -410,6 +410,7 @@ ul {
   flex-direction: row;
   gap: 20px;
   margin: 10px 30px 30px 30px;
+  align-items: center;
 }
 
 .popbutton-big {
@@ -443,12 +444,12 @@ ul {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
-  flex: 50%;
   font-family: Poppins, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 10px;
   text-align: center;
+  align-items: center;
 }
 
 .contactform {
@@ -843,14 +844,14 @@ textarea::placeholder {
   }
 
   .popupcont {
-    width: 100vh;
+    width: 100%;
     height: 100vh;
   }
 
   .popupcard {
     width: 90vh;
     height: 90vh;
-    margin: 30px 15px 30px 30px;
+    margin: 50px auto;
   }
 
   .poptitle {

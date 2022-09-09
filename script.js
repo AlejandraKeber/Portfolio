@@ -167,13 +167,39 @@ closePopup.addEventListener('click', () => {
 });
 
 /* Validate email form */
-const email = document.getElementById('email').value;
-const lowerCase = email.toLowerCase;
+const email = document.getElementById('email');
 const submit = document.querySelector('.submit');
 
-submit.addEventListener('click', (e) => {
-  if (email !== lowerCase) {
-    e.preventDefault();
+submit.addEventListener('click', (event) => {
+  
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
     document.querySelector('#error').innerHTML = 'Please write the email in lower case';
-  }
+  } 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* function ValidateEmail(inputText) {
+var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+if(inputText.value.match(mailformat)) {
+return true;
+} else {
+  document.querySelector('#error').innerHTML = "Please write the email in a valid format and lower case";
+document.form1.email1.focus();
+return false;
+}
+}
+ */
+

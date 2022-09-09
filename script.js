@@ -171,11 +171,9 @@ const email = document.getElementById('email').value;
 const lowerCase = email.toLowerCase;
 const submit = document.querySelector('.submit');
 
-submit.addEventListener('click', (e)=> {
+submit.addEventListener('click', (e) => {
   if (email !== lowerCase) {
     e.preventDefault();
     document.querySelector('#error').innerHTML = 'Please write the email in lower case';
   }
 });
-  
-

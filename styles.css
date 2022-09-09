@@ -334,7 +334,7 @@ ul {
   position: fixed;
   background-color: #c1c7d0a6;
   backdrop-filter: blur(3px);
-  height: 100vh;;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }

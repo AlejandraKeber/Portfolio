@@ -112,14 +112,14 @@ ul {
   gap: 19px;
 }
 
-.grid-container {
+.cards {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-  margin: 114px 24px 88px 30px;
+  margin: 114px 24px 88px 12px;
 }
 
-.grid-item {
+.projectcontainer {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -127,54 +127,63 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  height: auto;
 }
 
-.grid-item img {
+.projectcontainer img {
   transition: transform 0.5s ease-in;
   transition-delay: 0.2s;
 }
 
-.grid-item img:hover {
+.projectcontainer img:hover {
   transform: scale(1.1);
 }
 
-.project {
+.projectdetails {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
 }
 
-.headline-work {
+.projecttitle {
   color: #172b4d;
   font-size: 32px;
   font-weight: 700;
 }
 
-.headline-detail {
+.projectdet {
   display: flex;
   align-items: center;
   text-align: left;
   gap: 15px;
   font-weight: 700;
-  margin: 1px 1px 1px 16px;
+  margin: 1px 1px 1px 1px;
+  color: #7a869a;
+  font-size: 13px;
+  padding-left: 0.5px;
 }
 
-.canopy {
+.company {
   color: #344563;
   font-size: 13px;
 }
 
-.backenddev {
+.jobtitle {
   color: #7a869a;
   font-size: 13px;
 }
 
-.headlinecont-work {
+.year {
+  color: #7a869a;
+  font-size: 13px;
+}
+
+.headlinecont_work {
   text-align: left;
   color: #344563;
   font-size: 15px;
-  margin-right: 24px;
+  margin: 12px 0.5px 12px 0.5px;
 }
 
 .smallbuttons {
@@ -182,9 +191,11 @@ ul {
   text-align: left;
   gap: 10px;
   border: none;
+  padding-left: 0.5px;
+  margin-bottom: 10px;
 }
 
-.button-small {
+.button_small {
   align-items: center;
   align-content: center;
   background: #ebebff;
@@ -192,9 +203,10 @@ ul {
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
+  padding: 3px 5px 3px 5px;
 }
 
-.button-big {
+.button_big {
   background-color: #fff;
   padding: 12px;
   gap: 10px;
@@ -203,10 +215,9 @@ ul {
   color: #396df2;
   font-size: 17px;
   font-weight: 700;
-  margin-left: 16px;
 }
 
-.button-big:hover {
+.button_big:hover {
   color: #fff;
   background-color: #6070ff;
 }
@@ -257,6 +268,23 @@ ul {
   margin: 15px 40px 15px 40px;
 }
 
+.button_resume {
+  background-color: #fff;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.button_resume:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
 .languages {
   display: flex;
   flex-direction: row;
@@ -265,7 +293,7 @@ ul {
   align-items: center;
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 24px 12px 40px;
+  margin: 50px 24px 12px 5px;
 }
 
 .dropdown-image {
@@ -280,7 +308,7 @@ ul {
   align-items: center;
   font-size: 20px;
   font-weight: 700;
-  margin: 12px 24px 12px 40px;
+  margin: 12px 24px 12px 5px;
 }
 
 .lang {
@@ -299,6 +327,129 @@ ul {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.popupcont {
+  display: none;
+  position: fixed;
+  background-color: #c1c7d0a6;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupcard {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow-y: scroll;
+  margin: 30px 15px 30px 15px;
+}
+
+.poptitle {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 16px;
+}
+
+.popclose {
+  float: right;
+  margin-top: 10px;
+  margin-right: 16px;
+  padding-right: 16px;
+}
+
+.popdetail {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 12px;
+  color: #7a869a;
+  margin-left: 30px;
+  margin-bottom: 16px;
+}
+
+.popimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popdescrip {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 16px 16px 16px 30px;
+}
+
+.popsmallbuttons {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  border: none;
+  padding-left: 0.5px;
+  margin: 10px 2px 10px 30px;
+}
+
+.pop-button-small {
+  align-items: center;
+  align-content: center;
+  background: #ebebff;
+  border: none;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+}
+
+.poplinks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px 30px 30px 30px;
+  align-items: center;
+}
+
+.popbutton-big {
+  background-color: #fff;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #6070ff;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  padding: 8px 8px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.img-btn {
+  font-size: 12px;
+}
+
+.live,
+.source {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .contactform {
@@ -422,6 +573,7 @@ textarea::placeholder {
   .nav-items {
     width: 100%;
     background-color: #6070ffcf;
+    backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     left: -100%;
@@ -504,23 +656,23 @@ textarea::placeholder {
     margin-left: 240px;
   }
 
-  .grid-item {
+  .projectcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 80px 100px 80px 100px;
   }
 
-  .grid-item img {
+  .projectcontainer img {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .project {
+  .projectdetails {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .headline-work {
+  .projecttitle {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -529,32 +681,40 @@ textarea::placeholder {
     margin-top: 10px;
   }
 
-  .canopy {
+  .projectdet {
+    color: #7a869a;
+    font-size: 13px;
+    padding-left: 0.5px;
+    margin-left: 0.5px;
+  }
+
+  .company {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: #344563;
   }
 
-  .backenddev {
+  .jobtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #6b778c;
   }
 
-  .headlinecont-work {
+  .headlinecont_work {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
   }
 
-  .button-small {
+  .button_small {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
+    padding: 3px 8px 3px 8px;
   }
 
   #mobile {
@@ -575,22 +735,22 @@ textarea::placeholder {
     flex-direction: row-reverse;
   }
 
-  .sec3 .button-big {
+  .sec3 .button_big {
     background: #4053fc;
     border-radius: 8px;
     color: #fff;
   }
 
-  .sec3 .button-big:hover {
+  .sec3 .button_big:hover {
     color: #4053fc;
     background-color: #fff;
   }
 
-  .grid-container2 {
+  .cards2 {
     height: 700px;
   }
 
-  .grid-item2 {
+  .projectcontainer2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -602,7 +762,16 @@ textarea::placeholder {
   }
 
   .about-myself-languages {
-    margin-right: 100px;
+    margin-right: 30px;
+  }
+
+  .framework {
+    padding-left: 100px;
+  }
+
+  .languages {
+    padding-left: 100px;
+    padding-top: 50px;
   }
 
   .final-headline {
@@ -622,6 +791,8 @@ textarea::placeholder {
     align-items: center;
     padding: 12px;
     gap: 12px;
+    margin-left: 100px;
+    background: #f7f7f9;
   }
 
   .lang li {
@@ -632,6 +803,11 @@ textarea::placeholder {
     width: 100px;
     padding: 12px;
     gap: 12px;
+  }
+
+  .arrow-image {
+    margin-top: -50px;
+    margin-left: 500px;
   }
 
   .contactform {
@@ -665,5 +841,70 @@ textarea::placeholder {
   .submit {
     align-items: center;
     align-content: center;
+  }
+
+  .popupcont {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .popupcard {
+    width: 90vh;
+    height: 90vh;
+    margin: 50px auto;
+  }
+
+  .poptitle {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .popdetail {
+    margin-left: 40px;
+  }
+
+  .popimge {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    height: auto;
+    margin: 16px 30px 16px 30px;
+  }
+
+  .sect {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popdescrip {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin-left: 40px;
+    margin-right: 16px;
+    display: flex;
+    width: 45vh;
+  }
+
+  .popbuttons {
+    float: right;
+  }
+
+  .popsmallbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 30px 1px 30px 1px;
+  }
+
+  .popbutton-big {
+    margin-left: 1px;
+  }
+
+  .poplinks {
+    gap: 8px;
+    margin-left: 1px;
   }
 }

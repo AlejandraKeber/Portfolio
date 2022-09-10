@@ -180,14 +180,16 @@ submit.addEventListener('click', (event) => {
 /* form localStorage */
 const name = document.getElementById('name');
 const text = document.getElementById('text');
-function saveForm(){
-const info = {
-  name: name.value,
-  email: email.value,
-  text: text.value
-};
-localStorage.setItem('info', JSON.stringify(info));
-}
+const form = document.getElementById('finalform');
+
+form.addEventListener('input', () => {
+  const info = {
+    name: name.value,
+    email: email.value,
+    text: text.value
+  };
+  localStorage.setItem('info', JSON.stringify(info));
+})
 
 function getData() {
   const newInfo = JSON.parse(localStorage.getItem('info'));

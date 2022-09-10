@@ -186,10 +186,10 @@ form.addEventListener('input', () => {
   const info = {
     name: name.value,
     email: email.value,
-    text: text.value
+    text: text.value,
   };
   localStorage.setItem('info', JSON.stringify(info));
-})
+});
 
 function getData() {
   const newInfo = JSON.parse(localStorage.getItem('info'));

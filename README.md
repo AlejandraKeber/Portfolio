@@ -16,7 +16,7 @@ cd Project-setup-and-mobile-main
 - Open the folder with you code editor
 
 **Deployment:**
-- Please go to this link to deploy the webpage: [Portfolio](https://alejandrakeber.github.io/)
+- Please go to this link to deploy the webpage: [Portfolio](https://alejandrakeber.github.io/Portfolio/)
 
 **Authors**
 

@@ -118,16 +118,16 @@
                 <p class="contactme-detail">If you have an application you are interested in developing, a feature that
                     you need built or a
                     project that needs coding. I’d love to help with it</p>
-                <form id="signup" action="https://formspree.io/f/mzbwzepn" method="post">
-                    <fieldset class="finalforms">
-                        <input name="name" type="text" maxlength="30" placeholder="Alejandra" required>
-                        <input id="email" name="email" type="email" placeholder="alejandrakeber@gmail.com" required>
-                        <textarea placeholder="Write your message here" maxlength="500" rows="10" cols="39"
-                            required></textarea>
-                        <button class="submit" type="submit">Get It Touch</button>
-                        <p id="error"></p>
-                    </fieldset>
-                </form>
+                    <form id="finalform">
+                        <fieldset class="finalforms">
+                            <input id="name" name="name" oninput="saveForm()" type="text" maxlength="30" placeholder="Alejandra" required>
+                            <input id="email" name="email" oninput="saveForm()" type="email" placeholder="alejandrakeber@gmail.com" required>
+                            <textarea id="text" oninput="saveForm()" placeholder="Write your message here" maxlength="500" rows="10" cols="39"
+                                required></textarea>
+                            <button class="submit" type="submit">Get It Touch</button>
+                            <p id="error"></p>
+                        </fieldset>
+                    </form>
             </div>
         </section>
     </div>

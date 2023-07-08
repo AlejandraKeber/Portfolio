@@ -59,15 +59,15 @@ const projects = [
     linkUrl: 'https://github.com/AlejandraKeber/To-Do-List',
   },
   {
-    title: 'Uber Navigation',
-    details: ['Uber', 'Lead Developer', '2018'],
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    tec: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    image: './Images/Works/SnapshootPortfolio4.png',
+    title: 'Budget App',
+    details: ['MICROVERSE', 'Full Stack Dev', '2023'],
+    description: 'App developed with RoR to manage budget, listing transactions associated with a category',
+    popupdescription: 'Budget App is an app created with Ruby on Rails. It is an app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what',
+    tec: ['html', 'Ruby on rails', 'css'],
+    image: './Images/Works/budgetrordesk.png',
     link: 'https://www.github.com',
-    linkLive: 'https://alejandrakeber.github.io/',
-    linkUrl: 'https://github.com/AlejandraKeber/Project-setup-and-mobile-main',
+    linkLive: 'https://budget-app-ror-8c0k.onrender.com/',
+    linkUrl: 'https://github.com/AlejandraKeber/budget-app-ror',
   },
 ];
 

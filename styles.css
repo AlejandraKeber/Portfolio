@@ -9,11 +9,17 @@
 body {
   font-family: 'poppins', sans-serif;
   height: 588px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Navbar */
+
+.wrapper {
+  width: 100%;
+  background-color: #e5e5e5;
 }
 
 .navbar {
@@ -24,35 +30,34 @@ body {
   color: #6070ff;
   font-size: 18px;
   background-color: #fff;
+  height: 50px;
+  padding: 0 20px;
 }
 
 .nav-items {
   display: flex;
-  flex-direction: row;
   gap: 10px;
-  margin-right: 120px;
 }
 
 .nav-items a {
   text-decoration: none;
+  color: #6070ff;
+  padding: 8px 12px;
 }
 
-.wrapper {
-  width: 375px;
-  background-color: #e5e5e5;
-}
 
 .box1 {
   text-decoration: none;
   font-weight: bold;
   color: #6070ff;
+  justify-content: center;
+  align-items: center;
   margin-top: 24px;
-  margin-left: 40px;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: transform 0.2s;
 }
 
 .box1:hover {
-  transform: rotate(25deg);
+  transform: scale(1.1);
 }
 
 .hamburger {
@@ -62,12 +67,21 @@ body {
   margin-right: 24px;
 }
 
+/* Main page */
+
 .main {
   background-image: url(./Images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-color: #fff;
   border-bottom-left-radius: 60px;
   height: 588px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 24px;
 }
 
 .headline {
@@ -78,32 +92,36 @@ body {
   font-size: 40px;
   font-weight: 700;
   padding-top: 100px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px;
 }
 
 .headlinecont {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
   color: #344563;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.lets-connect {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
   margin-left: 40px;
-  margin-right: 24px;
 }
 
 .footer {
   display: flex;
   color: #7f8cff;
   font-size: 16px;
-  margin: 15px 0.1px 15px 40px;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 40px;
 }
 
 .socialicons {
@@ -112,11 +130,14 @@ ul {
   gap: 19px;
 }
 
+/* Projects section */
+
 .cards {
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-  margin: 114px 24px 88px 12px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  margin: 24px 12px 24px 12px;
 }
 
 .projectcontainer {
@@ -128,15 +149,17 @@ ul {
   flex-direction: column;
   gap: 12px;
   height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projectcontainer img {
-  transition: transform 0.5s ease-in;
+  max-width: 100%;
+  transition: transform 0.2s ease-in;
   transition-delay: 0.2s;
 }
 
 .projectcontainer img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 .projectdetails {
@@ -155,7 +178,7 @@ ul {
 .projectdet {
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: justify;
   gap: 15px;
   font-weight: 700;
   margin: 1px 1px 1px 1px;
@@ -180,7 +203,7 @@ ul {
 }
 
 .headlinecont_work {
-  text-align: left;
+  text-align: justify;
   color: #344563;
   font-size: 15px;
   margin: 12px 0.5px 12px 0.5px;
@@ -188,6 +211,7 @@ ul {
 
 .smallbuttons {
   display: flex;
+  justify-content: center;
   text-align: left;
   gap: 10px;
   border: none;
@@ -208,8 +232,7 @@ ul {
 
 .button_big {
   background-color: #fff;
-  padding: 12px;
-  gap: 10px;
+  padding: 10px 20px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   color: #396df2;
@@ -222,17 +245,26 @@ ul {
   background-color: #6070ff;
 }
 
+/* About section */
+
 .grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-columns: minmax(300px, 327px);
-  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
   margin-top: 80px;
   border-top-right-radius: 60px;
   align-items: center;
+  padding-bottom: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-myself {
+  width: 90%;
+  text-align: center;
 }
 
 .final-headline {
@@ -251,6 +283,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  text-align: justify;
   margin: 15px 24px 12px 40px;
 }
 
@@ -278,11 +311,16 @@ ul {
   font-size: 17px;
   font-weight: 700;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 .button_resume:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+.about-myself-languages {
+  margin-left: 40px;
 }
 
 .languages {
@@ -315,11 +353,12 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   font-size: 15px;
   padding: 12px;
   gap: 12px;
-  margin-left: 24px;
-  background: #f7f7f9;
+  margin-right: 12px;
+  background: #e5e5e5;
   border-radius: 8px;
 }
 
@@ -328,6 +367,13 @@ ul {
   align-items: center;
   gap: 15px;
 }
+
+.lang img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Pop-up section */
 
 .popupcont {
   display: none;
@@ -452,6 +498,8 @@ ul {
   align-items: center;
 }
 
+/* Contact section */
+
 .contactform {
   background-image: url(./Images/bg.png);
   background-position: right;
@@ -486,7 +534,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
+  text-align: justify;
   align-items: center;
   color: #ebebff;
   margin: 24px 24px 24px 24px;
@@ -517,11 +565,11 @@ input::placeholder {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172b4d;
+  color: #b3bac5;
   padding-left: 10px;
 }
 
@@ -568,6 +616,9 @@ textarea::placeholder {
 .submit:hover {
   background-color: #6070ff;
   color: #fff;
+  border: 1px solid white;
+  cursor: pointer;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 #error {
@@ -627,6 +678,8 @@ textarea::placeholder {
     font-size: 18px;
     line-height: 20px;
     padding-left: 250px;
+    justify-content: center;
+    align-items: center;
   }
 
   .hamburger {
@@ -637,10 +690,8 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    display: flex;
-    justify-content: left;
-    margin-left: 260px;
-    padding-top: 240px;
+    margin-top: 100px;
+    text-align: center;
   }
 
   .headlinecont {
@@ -648,25 +699,32 @@ textarea::placeholder {
     font-size: 20px;
     line-height: 28px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 260px;
-    margin-right: 260px;
+    max-width: 85%;
+    margin: 0 auto;
   }
 
   .footer {
-    margin-left: 260px;
-  }
-
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 40px;
+    }
+    
   .socialicons {
     display: flex;
-    margin-left: 240px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .projectcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 80px 100px 80px 100px;
   }
 
   .projectcontainer img {
@@ -762,10 +820,19 @@ textarea::placeholder {
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid-container2 {
+    padding-top: 100px;
+    text-align: center;
+  }
+
   .about-myself {
     margin-left: 100px;
-    width: 447px;
+    width: 60%;
     margin-top: -120px;
+  }
+
+  .final-cont {
+    max-width: 85%;
   }
 
   .about-myself-languages {
@@ -781,12 +848,6 @@ textarea::placeholder {
     padding-top: 50px;
   }
 
-  .final-headline {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-
   .dropdown-image {
     margin-top: -50px;
     margin-left: 500px;
@@ -795,17 +856,15 @@ textarea::placeholder {
   .lang {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
+    margin-left: 100px;
     padding: 12px;
     gap: 12px;
-    margin-left: 100px;
-    background: #f7f7f9;
   }
 
   .lang li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100px;
     padding: 12px;
@@ -825,7 +884,6 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -30px;
   }
 
   .contactme-detail {

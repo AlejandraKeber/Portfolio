@@ -45,7 +45,6 @@ body {
   padding: 8px 12px;
 }
 
-
 .box1 {
   text-decoration: none;
   font-weight: bold;
@@ -75,7 +74,7 @@ body {
   background-color: #fff;
   border-bottom-left-radius: 60px;
   height: 588px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .intro {
@@ -149,7 +148,7 @@ ul {
   flex-direction: column;
   gap: 12px;
   height: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projectcontainer img {
@@ -257,9 +256,8 @@ ul {
   background-color: #fff;
   margin-top: 80px;
   border-top-right-radius: 60px;
-  align-items: center;
   padding-bottom: 100px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about-myself {
@@ -368,7 +366,7 @@ ul {
   gap: 15px;
 }
 
-.lang img {
+.langimg {
   width: 30px;
   height: 30px;
 }
@@ -709,8 +707,8 @@ textarea::placeholder {
     font-weight: 600;
     text-align: center;
     margin-left: 40px;
-    }
-    
+  }
+
   .socialicons {
     display: flex;
     margin-top: 20px;

@@ -387,7 +387,11 @@ ul {
   background-color: #fff;
   border-radius: 8px;
   overflow-y: scroll;
-  margin: 30px 15px 30px 15px;
+  width: 80%;
+  height: 90vh;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
 
 .poptitle {
@@ -421,12 +425,27 @@ ul {
   align-items: center;
 }
 
+.popimge {
+  max-width: 100%;
+  height: auto;
+}
+
 .popdescrip {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  text-align: justify;
   margin: 16px 16px 16px 30px;
+}
+
+.popbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-left: 30px;
+  margin-bottom: 16px;
 }
 
 .popsmallbuttons {
@@ -446,7 +465,10 @@ ul {
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
-  padding: 3px 5px 3px 5px;
+  padding: 6px 12px;
+  margin-right: 10px;
+  white-space: nowrap;
+  width: auto;
 }
 
 .poplinks {
@@ -455,6 +477,20 @@ ul {
   gap: 20px;
   margin: 10px 30px 30px 30px;
   align-items: center;
+}
+
+.poplinks a {
+  display: flex;
+  align-items: center;
+}
+
+.poplinks img {
+  margin-left: 5px;
+}
+
+.live:hover, .source:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .popbutton-big {
@@ -912,9 +948,13 @@ textarea::placeholder {
   }
 
   .popupcard {
-    width: 90vh;
+    width: 70%;
     height: 90vh;
     margin: 50px auto;
+  }
+
+  .pophead, .popimg, .popdescription, .popbuttons {
+    text-align: center;
   }
 
   .poptitle {
@@ -930,7 +970,7 @@ textarea::placeholder {
   .popimge {
     display: flex;
     justify-content: left;
-    width: 90%;
+    max-width: 100%;
     height: auto;
     margin: 16px 30px 16px 30px;
   }
@@ -948,11 +988,16 @@ textarea::placeholder {
     margin-left: 40px;
     margin-right: 16px;
     display: flex;
+    text-align: justify;
     width: 45vh;
   }
 
   .popbuttons {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
   }
 
   .popsmallbuttons {
@@ -962,6 +1007,16 @@ textarea::placeholder {
     margin: 30px 1px 30px 1px;
   }
 
+  .pop-button-small {
+    background: #ebebff;
+    border: none;
+    border-radius: 8px;
+    color: #6070ff;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-right: 10px;
+  }
+
   .popbutton-big {
     margin-left: 1px;
   }
@@ -969,5 +1024,19 @@ textarea::placeholder {
   .poplinks {
     gap: 8px;
     margin-left: 1px;
+  }
+
+  .poplinks a {
+    display: flex;
+    align-items: center;
+}
+
+  .poplinks img {
+    margin-left: 5px;
+  }
+
+  .live:hover, .source:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 }

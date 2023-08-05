@@ -58,7 +58,9 @@ const projects = [
   },
 ];
 
-function createProjectElement(project) {
+function createProjectElement({
+  title, details, description, popupdescription, tec, image, index, linkLive, linkUrl,
+}) {
   const cards = document.createElement('div');
   cards.classList.add('cards');
 
@@ -69,7 +71,7 @@ function createProjectElement(project) {
   const imgContainer = document.createElement('div');
   imgContainer.classList.add('img-container');
   const projectimg = document.createElement('img');
-  projectimg.src = project.image;
+  projectimg.src = image;
   projectimg.alt = 'project image';
   projectimg.style.width = '100%';
   projectimg.style.height = 'auto';
@@ -80,17 +82,12 @@ function createProjectElement(project) {
   projectdetails.classList.add('projectdetails');
   projectcontainer.appendChild(projectdetails);
 
-  const projecttitle = document.createElement('h2');
-  projecttitle.classList.add('projecttitle');
-  projecttitle.textContent = project.title;
-  projectdetails.appendChild(projecttitle);
-
   const projectdet = document.createElement('ul');
   projectdet.classList.add('projectdet');
-  for (let count = 0; count < project.details.length; count += 1) {
+  for (let count = 0; count < details.length; count += 1) {
     const item = document.createElement('li');
     const company = document.createElement('p');
-    const text = document.createTextNode(project.details[count]);
+    const text = document.createTextNode(details[count]);
     company.appendChild(text);
     item.appendChild(company);
     projectdet.appendChild(item);
@@ -99,14 +96,14 @@ function createProjectElement(project) {
 
   const headlinecontwork = document.createElement('p');
   headlinecontwork.classList.add('headlinecont_work');
-  headlinecontwork.textContent = project.description;
+  headlinecontwork.textContent = description;
   projectdetails.appendChild(headlinecontwork);
 
   const smallbuttons = document.createElement('ul');
   smallbuttons.classList.add('smallbuttons');
-  for (let counter = 0; counter < project.tec.length; counter += 1) {
+  for (let counter = 0; counter < tec.length; counter += 1) {
     const item = document.createElement('li');
-    const text = document.createTextNode(project.tec[counter]);
+    const text = document.createTextNode(tec[counter]);
     item.appendChild(text);
     item.classList.add('button_small');
     smallbuttons.appendChild(item);
@@ -122,23 +119,25 @@ function createProjectElement(project) {
 
   const popdetail = document.createElement('div');
   popdetail.classList.add('popdetail');
-  
+
+  const [companyText, jobDescriptionText, yearText] = details;
+
   const company = document.createElement('p');
   company.classList.add('company');
-  company.textContent = project.details[0]; // Obtiene el valor de 'company' desde 'details'
+  company.textContent = companyText;
   popdetail.appendChild(company);
 
   const jobdescription = document.createElement('p');
   jobdescription.classList.add('jobdescription');
-  jobdescription.textContent = project.details[1]; // Obtiene el valor de 'jobdescription' desde 'details'
+  jobdescription.textContent = jobDescriptionText;
   popdetail.appendChild(jobdescription);
 
   const year = document.createElement('p');
   year.classList.add('year');
-  year.textContent = project.details[2]; // Obtiene el valor de 'year' desde 'details'
+  year.textContent = yearText;
   popdetail.appendChild(year);
 
-  if (project.index % 2 === 0) {
+  if (index % 2 === 0) {
     projectcontainer.appendChild(imgContainer);
     projectcontainer.appendChild(projectdetails);
   } else {
@@ -146,27 +145,27 @@ function createProjectElement(project) {
     projectcontainer.appendChild(imgContainer);
   }
 
-  // Asignar atributos personalizados para guardar los datos del proyecto
-  buttonbig.setAttribute('data-title', project.title);
-  buttonbig.setAttribute('data-image', project.image);
-  buttonbig.setAttribute('data-popupdescription', project.popupdescription);
-  buttonbig.setAttribute('data-link-live', project.linkLive);
-  buttonbig.setAttribute('data-link-url', project.linkUrl);
+  // Set attibutes to save project data
+  buttonbig.setAttribute('data-title', title);
+  buttonbig.setAttribute('data-image', image);
+  buttonbig.setAttribute('data-popupdescription', popupdescription);
+  buttonbig.setAttribute('data-details', details);
+  buttonbig.setAttribute('data-link-live', linkLive);
+  buttonbig.setAttribute('data-link-url', linkUrl);
 
   return cards;
 }
 
-// Crear y agregar los proyectos al DOM utilizando map
+// Create and add projects to DOM
 function createProjectCards() {
   const cardsContainer = document.querySelector('.cards');
   const projectElements = projects.map((project, index) => ({
     ...project,
     index,
   }));
-  cardsContainer.append(...projectElements.map(createProjectElement));
+  cardsContainer.append(...projectElements.map((project) => createProjectElement(project)));
 }
 
-// Llamar a la función para crear y agregar los proyectos al DOM
 createProjectCards();
 
 /* Popup window for project details */
@@ -184,14 +183,17 @@ for (let index = 0; index < openPopup.length; index += 1) {
     modalPopup.querySelector('.live').href = projects[p].linkLive;
     modalPopup.querySelector('.source').href = projects[p].linkUrl;
 
-    // Actualiza la sección de popdetail con la información del proyecto
-    modalPopup.querySelector('.company').textContent = projects[p].details[0];
-    modalPopup.querySelector('.jobdescription').textContent = projects[p].details[1];
-    modalPopup.querySelector('.year').textContent = projects[p].details[2];
+    // Destructure the array 'details' to access the elements
+    const [companyText, jobDescriptionText, yearText] = projects[p].details;
 
-    // Actualiza la sección de poptec con los botones correspondientes
+    // Update popdetail section with the project info
+    modalPopup.querySelector('.company').textContent = companyText;
+    modalPopup.querySelector('.jobdescription').textContent = jobDescriptionText;
+    modalPopup.querySelector('.year').textContent = yearText;
+
+    // Update poptec section with buttons
     const poptec = modalPopup.querySelector('.poptec');
-    poptec.innerHTML = ''; // Limpia los botones anteriores
+    poptec.innerHTML = '';
 
     projects[p].tec.forEach((tech) => {
       const button = document.createElement('button');

@@ -157,10 +157,6 @@ ul {
   transition-delay: 0.2s;
 }
 
-.projectcontainer img:hover {
-  transform: scale(1.01);
-}
-
 .projectdetails {
   display: flex;
   flex-direction: column;
@@ -391,7 +387,7 @@ ul {
   height: 90vh;
   margin: 50px auto;
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .poptitle {
@@ -484,13 +480,17 @@ ul {
   align-items: center;
 }
 
-.poplinks img {
+.poplinks a:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.poplinks a img {
   margin-left: 5px;
 }
 
-.live:hover, .source:hover {
-  background-color: #6070ff;
-  color: #fff;
+.projectcontainer img:hover {
+  transform: scale(1.01);
 }
 
 .popbutton-big {
@@ -953,7 +953,10 @@ textarea::placeholder {
     margin: 50px auto;
   }
 
-  .pophead, .popimg, .popdescription, .popbuttons {
+  .pophead,
+  .popimg,
+  .popdescription,
+  .popbuttons {
     text-align: center;
   }
 
@@ -1029,13 +1032,14 @@ textarea::placeholder {
   .poplinks a {
     display: flex;
     align-items: center;
-}
+  }
 
   .poplinks img {
     margin-left: 5px;
   }
 
-  .live:hover, .source:hover {
+  .live:hover,
+  .source:hover {
     background-color: #6070ff;
     color: #fff;
   }

@@ -82,6 +82,11 @@ function createProjectElement({
   projectdetails.classList.add('projectdetails');
   projectcontainer.appendChild(projectdetails);
 
+  const projecttitle = document.createElement('h2');
+  projecttitle.classList.add('projecttitle');
+  projecttitle.textContent = title;
+  projectdetails.appendChild(projecttitle);
+
   const projectdet = document.createElement('ul');
   projectdet.classList.add('projectdet');
   for (let count = 0; count < details.length; count += 1) {

@@ -7,8 +7,7 @@
 }
 
 body {
-  font-family: 'poppins', sans-serif;
-  height: 588px;
+  font-family: 'Poppins', sans-serif;
   margin: 0 24px;
   display: flex;
   flex-direction: column;
@@ -23,21 +22,20 @@ body {
 }
 
 .navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: #6070ff;
-  font-size: 18px;
-  background-color: #fff;
-  height: 50px;
-  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #fff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #6070ff;
+  font-size: 18px;
+  height: 50px;
 }
 
 .nav-items {
@@ -52,11 +50,12 @@ body {
 }
 
 .box1 {
-  text-decoration: none;
   font-weight: bold;
   color: #6070ff;
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   transition: transform 0.2s;
 }
 
@@ -74,9 +73,10 @@ body {
 /* Main page */
 
 .main {
-  background-image: url(./Images/header-shapes-mobile.png);
+  background-image: url(./Images/header-shapes-mobile.png), url(./Images/Header-big.png);
   background-repeat: no-repeat;
   background-color: #fff;
+  background-size: contain;
   border-bottom-left-radius: 60px;
   height: 588px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -89,25 +89,27 @@ body {
 }
 
 .headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #172b4d;
   font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
+  text-align: center;
   padding-top: 100px;
   margin: 0 24px;
-}
-
-.headlinecont {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.headlinecont {
   text-align: justify;
   color: #344563;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lets-connect {
@@ -118,10 +120,11 @@ body {
 }
 
 .footer {
-  display: flex;
-  color: #7f8cff;
   font-size: 16px;
+  color: #7f8cff;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 ul {
@@ -159,7 +162,6 @@ ul {
 .projectcontainer img {
   max-width: 100%;
   transition: transform 0.2s ease-in;
-  transition-delay: 0.2s;
 }
 
 .projectdetails {
@@ -176,14 +178,13 @@ ul {
 }
 
 .projectdet {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  gap: 15px;
-  font-weight: 700;
-  margin: 1px 1px 1px 1px;
   color: #7a869a;
   font-size: 13px;
+  font-weight: 700;
+  margin: 1px 1px 1px 1px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
   padding-left: 0.5px;
 }
 
@@ -212,22 +213,22 @@ ul {
 .smallbuttons {
   display: flex;
   justify-content: center;
-  text-align: left;
   gap: 10px;
+  margin-bottom: 10px;
+  text-align: left;
   border: none;
   padding-left: 0.5px;
-  margin-bottom: 10px;
 }
 
 .button_small {
-  align-items: center;
-  align-content: center;
   background: #ebebff;
   border: none;
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
-  padding: 3px 5px 3px 5px;
+  padding: 3px 5px;
+  align-items: center;
+  align-content: center;
 }
 
 .button_big {
@@ -262,48 +263,49 @@ ul {
 }
 
 .about-myself {
-  width: 90%;
   text-align: center;
+  width: 90%;
 }
 
 .final-headline {
-  display: flex;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172b4d;
   margin-left: 40px;
   margin-top: 100px;
-  color: #172b4d;
+  display: flex;
 }
 
 .final-cont {
-  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
   text-align: justify;
   margin: 15px 24px 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .connect {
-  display: flex;
   color: #7f8cff;
   font-size: 16px;
+  display: flex;
   margin-left: 40px;
 }
 
 .socialicons2 {
+  margin: 15px 40px;
   display: flex;
   align-items: center;
   gap: 19px;
-  margin: 15px 40px 15px 40px;
 }
 
 .button_resume {
   background-color: #fff;
   padding: 12px;
-  gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   color: #396df2;
@@ -382,6 +384,7 @@ ul {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .popupcard {
@@ -396,9 +399,9 @@ ul {
 }
 
 .poptitle {
-  color: #172b4d;
-  font-size: 32px;
   font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
   margin-left: 30px;
   margin-top: 16px;
 }
@@ -411,13 +414,13 @@ ul {
 }
 
 .popdetail {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  gap: 12px;
   color: #7a869a;
+  font-size: 13px;
   margin-left: 30px;
   margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .popimg {
@@ -459,8 +462,6 @@ ul {
 }
 
 .pop-button-small {
-  align-items: center;
-  align-content: center;
   background: #ebebff;
   border: none;
   border-radius: 8px;
@@ -470,6 +471,8 @@ ul {
   margin-right: 10px;
   white-space: nowrap;
   width: auto;
+  align-items: center;
+  align-content: center;
 }
 
 .poplinks {
@@ -499,9 +502,8 @@ ul {
 }
 
 .popbutton-big {
-  background-color: #fff;
+  background: #fff;
   padding: 12px;
-  gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   color: #396df2;
@@ -513,9 +515,9 @@ ul {
 
 .btn {
   color: #6070ff;
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #6070ff;
-  padding: 8px 8px;
+  padding: 8px;
   border-radius: 6px;
   transition: 0.2s ease-in-out;
 }
@@ -576,7 +578,7 @@ ul {
   text-align: justify;
   align-items: center;
   color: #ebebff;
-  margin: 24px 24px 24px 24px;
+  margin: 24px;
 }
 
 fieldset {
@@ -645,8 +647,6 @@ textarea::placeholder {
   padding: 12px 16px;
   width: 140px;
   height: 48px;
-  left: 24px;
-  top: 5317px;
   background: #fff;
   border-radius: 8px;
   margin-left: 10px;
@@ -780,272 +780,157 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091e42;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    padding-left: 10px;
   }
 
   .projectdet {
-    color: #7a869a;
-    font-size: 13px;
-    padding-left: 0.5px;
-    margin-left: 0.5px;
-  }
-
-  .company {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #344563;
-  }
-
-  .jobtitle {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #6b778c;
+    font-size: 15px;
   }
 
   .headlinecont_work {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .button_big {
+    font-size: 24px;
   }
 
   .button_small {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    padding: 3px 8px 3px 8px;
-  }
-
-  #mobile {
-    display: none;
-  }
-
-  .mob {
-    display: none;
-  }
-
-  .sec2 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .sec4 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .sec3 .button_big {
-    background: #4053fc;
-    border-radius: 8px;
-    color: #fff;
-  }
-
-  .sec3 .button_big:hover {
-    color: #4053fc;
-    background-color: #fff;
-  }
-
-  .cards2 {
-    height: 700px;
-  }
-
-  .projectcontainer2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 18px;
   }
 
   .grid-container2 {
-    padding-top: 100px;
-    text-align: center;
+    margin-top: 100px;
   }
 
   .about-myself {
-    margin-left: 100px;
-    width: 60%;
-    margin-top: -120px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .final-headline {
+    font-size: 48px;
+    line-height: 60px;
   }
 
   .final-cont {
-    max-width: 85%;
+    font-size: 24px;
+    margin: 10px 40px 40px 40px;
   }
 
-  .about-myself-languages {
-    margin-right: 30px;
-  }
-
-  .framework {
-    padding-left: 100px;
+  .connect {
+    font-size: 20px;
+    margin-left: 40px;
   }
 
   .languages {
-    padding-left: 100px;
-    padding-top: 50px;
+    font-size: 28px;
+    margin: 40px 40px 12px 40px;
   }
 
   .dropdown-image {
-    margin-top: -50px;
-    margin-left: 500px;
+    margin-left: 140px;
   }
 
-  .lang {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 100px;
-    padding: 12px;
-    gap: 12px;
-  }
-
-  .lang li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    padding: 12px;
-    gap: 12px;
-  }
-
-  .arrow-image {
-    margin-top: -50px;
-    margin-left: 500px;
-  }
-
-  .contactform {
-    background-image: url(./Images/bg-big.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contactme-detail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    font-size: 20px;
-    line-height: 28px;
-    width: 569px;
-  }
-
-  .finalforms {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .submit {
-    align-items: center;
-    align-content: center;
-  }
-
-  .popupcont {
-    width: 100%;
-    height: 100vh;
+  .framework {
+    font-size: 28px;
+    margin: 12px 40px 12px 40px;
   }
 
   .popupcard {
-    width: 70%;
-    height: 90vh;
+    width: 60%;
     margin: 50px auto;
   }
 
-  .pophead,
-  .popimg,
-  .popdescription,
-  .popbuttons {
-    text-align: center;
-  }
-
   .poptitle {
-    margin-left: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-left: 30px;
   }
 
   .popdetail {
-    margin-left: 40px;
-  }
-
-  .popimge {
-    display: flex;
-    justify-content: left;
-    max-width: 100%;
-    height: auto;
-    margin: 16px 30px 16px 30px;
-  }
-
-  .sect {
-    display: flex;
-    flex-direction: row;
+    font-size: 15px;
+    margin-left: 30px;
   }
 
   .popdescrip {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #344563;
-    margin-left: 40px;
-    margin-right: 16px;
-    display: flex;
-    text-align: justify;
-    width: 45vh;
+    font-size: 18px;
+    margin: 16px 16px 16px 30px;
   }
 
-  .popbuttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .popsmallbuttons {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin: 30px 1px 30px 1px;
-  }
-
-  .pop-button-small {
-    background: #ebebff;
-    border: none;
-    border-radius: 8px;
-    color: #6070ff;
-    font-size: 14px;
-    padding: 6px 12px;
-    margin-right: 10px;
+  .smallbuttons {
+    margin: 10px 2px 10px 30px;
   }
 
   .popbutton-big {
-    margin-left: 1px;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 
   .poplinks {
-    gap: 8px;
-    margin-left: 1px;
+    margin: 10px 30px;
   }
 
-  .poplinks a {
-    display: flex;
-    align-items: center;
+  .pop-button-small {
+    font-size: 16px;
+    padding: 6px 12px;
   }
 
-  .poplinks img {
-    margin-left: 5px;
+  .img-btn {
+    font-size: 16px;
   }
 
-  .live:hover,
-  .source:hover {
-    background-color: #6070ff;
-    color: #fff;
+  .contactform {
+    height: 700px;
+  }
+
+  .content {
+    height: 700px;
+  }
+
+  .content h2 {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+
+  .content p {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  input {
+    height: 60px;
+    width: 400px;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 180px;
+    width: 400px;
+  }
+
+  textarea::placeholder {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .submit {
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
   }
 }

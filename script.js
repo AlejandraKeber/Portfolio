@@ -1,3 +1,4 @@
+// Toggle menu
 const hamburger = document.querySelector('.hamburger');
 const modalMenu = document.querySelector('.nav-items');
 
@@ -11,6 +12,7 @@ modalMenu.addEventListener('click', (event) => {
   }
 });
 
+// Project data
 const projects = [
   {
     title: 'Videogames rental',
@@ -58,165 +60,86 @@ const projects = [
   },
 ];
 
-function createProjectElement({
-  title, details, description, popupdescription, tec, image, index, linkLive, linkUrl,
-}) {
-  const cards = document.createElement('div');
-  cards.classList.add('cards');
+// Create project element
+function createProjectElement(project, index) {
+  const {
+    title,
+    details,
+    description,
+    popupdescription,
+    tec,
+    image,
+    linkLive,
+    linkUrl,
+  } = project;
 
-  const projectcontainer = document.createElement('div');
-  projectcontainer.classList.add('projectcontainer');
-  cards.appendChild(projectcontainer);
-
-  const imgContainer = document.createElement('div');
-  imgContainer.classList.add('img-container');
-  const projectimg = document.createElement('img');
-  projectimg.src = image;
-  projectimg.alt = 'project image';
-  projectimg.style.width = '100%';
-  projectimg.style.height = 'auto';
-  projectcontainer.appendChild(imgContainer);
-  imgContainer.appendChild(projectimg);
-
-  const projectdetails = document.createElement('div');
-  projectdetails.classList.add('projectdetails');
-  projectcontainer.appendChild(projectdetails);
-
-  const projecttitle = document.createElement('h2');
-  projecttitle.classList.add('projecttitle');
-  projecttitle.textContent = title;
-  projectdetails.appendChild(projecttitle);
-
-  const projectdet = document.createElement('ul');
-  projectdet.classList.add('projectdet');
-  for (let count = 0; count < details.length; count += 1) {
-    const item = document.createElement('li');
-    const company = document.createElement('p');
-    const text = document.createTextNode(details[count]);
-    company.appendChild(text);
-    item.appendChild(company);
-    projectdet.appendChild(item);
-  }
-  projectdetails.appendChild(projectdet);
-
-  const headlinecontwork = document.createElement('p');
-  headlinecontwork.classList.add('headlinecont_work');
-  headlinecontwork.textContent = description;
-  projectdetails.appendChild(headlinecontwork);
-
-  const smallbuttons = document.createElement('ul');
-  smallbuttons.classList.add('smallbuttons');
-  for (let counter = 0; counter < tec.length; counter += 1) {
-    const item = document.createElement('li');
-    const text = document.createTextNode(tec[counter]);
-    item.appendChild(text);
-    item.classList.add('button_small');
-    smallbuttons.appendChild(item);
-  }
-  projectdetails.appendChild(smallbuttons);
-
-  const buttonbig = document.createElement('button');
-  buttonbig.classList.add('button_big');
-  buttonbig.setAttribute('type', 'button');
-  const butText = document.createTextNode('See Project');
-  buttonbig.appendChild(butText);
-  projectdetails.appendChild(buttonbig);
-
-  const popdetail = document.createElement('div');
-  popdetail.classList.add('popdetail');
-
-  const [companyText, jobDescriptionText, yearText] = details;
-
-  const company = document.createElement('p');
-  company.classList.add('company');
-  company.textContent = companyText;
-  popdetail.appendChild(company);
-
-  const jobdescription = document.createElement('p');
-  jobdescription.classList.add('jobdescription');
-  jobdescription.textContent = jobDescriptionText;
-  popdetail.appendChild(jobdescription);
-
-  const year = document.createElement('p');
-  year.classList.add('year');
-  year.textContent = yearText;
-  popdetail.appendChild(year);
-
-  if (index % 2 === 0) {
-    projectcontainer.appendChild(imgContainer);
-    projectcontainer.appendChild(projectdetails);
-  } else {
-    projectcontainer.appendChild(projectdetails);
-    projectcontainer.appendChild(imgContainer);
-  }
-
-  // Set attibutes to save project data
-  buttonbig.setAttribute('data-title', title);
-  buttonbig.setAttribute('data-image', image);
-  buttonbig.setAttribute('data-popupdescription', popupdescription);
-  buttonbig.setAttribute('data-details', details);
-  buttonbig.setAttribute('data-link-live', linkLive);
-  buttonbig.setAttribute('data-link-url', linkUrl);
-
-  return cards;
+  return `
+    <div class="cards">
+      <div class="projectcontainer">
+        <div class="img-container">
+          <img src="${image}" alt="project image" style="width: 100%; height: auto;">
+        </div>
+        <div class="projectdetails">
+          <h2 class="projecttitle">${title}</h2>
+          <ul class="projectdet">
+            ${details.map(detail => `<li><p>${detail}</p></li>`).join('')}
+          </ul>
+          <p class="headlinecont_work">${description}</p>
+          <ul class="smallbuttons">
+            ${tec.map(tech => `<li class="button_small">${tech}</li>`).join('')}
+          </ul>
+          <button class="button_big" type="button" 
+            data-title="${title}" 
+            data-image="${image}" 
+            data-popupdescription="${popupdescription}"
+            data-details="${details}"
+            data-link-live="${linkLive}"
+            data-link-url="${linkUrl}">See Project</button>
+        </div>
+      </div>
+    </div>`;
 }
 
 // Create and add projects to DOM
 function createProjectCards() {
   const cardsContainer = document.querySelector('.cards');
-  const projectElements = projects.map((project, index) => ({
-    ...project,
-    index,
-  }));
-  cardsContainer.append(...projectElements.map((project) => createProjectElement(project)));
+  cardsContainer.innerHTML = projects.map(createProjectElement).join('');
 }
 
 createProjectCards();
 
-/* Popup window for project details */
-const openPopup = document.querySelectorAll('.button_big');
+// Popup window for project details
 const modalPopup = document.querySelector('.popupcont');
 const closePopup = document.getElementById('closeModal');
+const popTech = modalPopup.querySelector('.poptec');
 
-for (let index = 0; index < openPopup.length; index += 1) {
-  openPopup[index].setAttribute('data-index', index);
-  openPopup[index].addEventListener('click', (e) => {
+document.querySelectorAll('.button_big').forEach((button, index) => {
+  button.setAttribute('data-index', index);
+  button.addEventListener('click', (e) => {
     const p = e.target.getAttribute('data-index');
-    modalPopup.querySelector('.poptitle').innerHTML = projects[p].title;
-    modalPopup.querySelector('.popimge').src = projects[p].image;
-    modalPopup.querySelector('.popdescrip').innerHTML = projects[p].popupdescription;
-    modalPopup.querySelector('.live').href = projects[p].linkLive;
-    modalPopup.querySelector('.source').href = projects[p].linkUrl;
+    const project = projects[p];
+    modalPopup.querySelector('.poptitle').innerHTML = project.title;
+    modalPopup.querySelector('.popimge').src = project.image;
+    modalPopup.querySelector('.popdescrip').innerHTML = project.popupdescription;
+    modalPopup.querySelector('.live').href = project.linkLive;
+    modalPopup.querySelector('.source').href = project.linkUrl;
 
-    // Destructure the array 'details' to access the elements
-    const [companyText, jobDescriptionText, yearText] = projects[p].details;
-
-    // Update popdetail section with the project info
+    const [companyText, jobDescriptionText, yearText] = project.details;
     modalPopup.querySelector('.company').textContent = companyText;
     modalPopup.querySelector('.jobdescription').textContent = jobDescriptionText;
     modalPopup.querySelector('.year').textContent = yearText;
 
-    // Update poptec section with buttons
-    const poptec = modalPopup.querySelector('.poptec');
-    poptec.innerHTML = '';
-
-    projects[p].tec.forEach((tech) => {
-      const button = document.createElement('button');
-      button.classList.add('pop-button-small');
-      button.setAttribute('type', 'button');
-      button.textContent = tech;
-      poptec.appendChild(button);
-    });
-
+    popTech.innerHTML = project.tec.map(tech => `<button class="pop-button-small" type="button">${tech}</button>`).join('');
+    
     modalPopup.style.display = 'block';
   });
-}
+});
 
 closePopup.addEventListener('click', () => {
   modalPopup.style.display = 'none';
 });
 
-/* Validate email form */
+// Validate email form
 const email = document.getElementById('email');
 const submit = document.querySelector('.submit');
 

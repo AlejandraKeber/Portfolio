@@ -32,6 +32,12 @@ body {
   background-color: #fff;
   height: 50px;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-items {
@@ -51,7 +57,6 @@ body {
   color: #6070ff;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
   transition: transform 0.2s;
 }
 
@@ -62,7 +67,7 @@ body {
 .hamburger {
   display: block;
   cursor: pointer;
-  margin-top: 24px;
+  margin-top: 12px;
   margin-right: 24px;
 }
 

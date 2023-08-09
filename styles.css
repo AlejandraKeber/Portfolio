@@ -73,13 +73,14 @@ body {
 /* Main page */
 
 .main {
-  background-image: url(./Images/header-shapes-mobile.png), url(./Images/Header-big.png);
-  background-repeat: no-repeat;
-  background-color: #fff;
-  background-size: contain;
+  background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
   border-bottom-left-radius: 60px;
   height: 588px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .intro {
@@ -89,7 +90,7 @@ body {
 }
 
 .headline {
-  color: #172b4d;
+  color: #fff;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -97,13 +98,12 @@ body {
   padding-top: 100px;
   margin: 0 24px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .headlinecont {
   text-align: justify;
-  color: #344563;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -121,7 +121,7 @@ body {
 
 .footer {
   font-size: 16px;
-  color: #7f8cff;
+  color: #fff;
   margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
@@ -135,6 +135,22 @@ ul {
   display: flex;
   align-items: center;
   gap: 19px;
+  background-color: #fff;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.socialicons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px; /* Ancho y alto iguales a las imágenes */
+  height: 35px; /* Ancho y alto iguales a las imágenes */
+}
+
+.socialicons img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Projects section */
@@ -156,7 +172,9 @@ ul {
   flex-direction: column;
   gap: 12px;
   height: auto;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #7f8cff;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #7f8cff;
 }
 
 .projectcontainer img {
@@ -542,10 +560,12 @@ ul {
 /* Contact section */
 
 .contactform {
-  background-image: url(./Images/bg.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #6070ff;
+  background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
   border-top-left-radius: 60px;
   margin-top: 50px;
 }
@@ -701,11 +721,7 @@ textarea::placeholder {
 
 @media (min-width: 768px) {
   .main {
-    background-image: url(./Images/Header-big.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 798px;
-    background-color: #fff;
+    height: 750px;
   }
 
   .wrapper {
@@ -729,7 +745,7 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
   }
 
@@ -754,6 +770,7 @@ textarea::placeholder {
     display: flex;
     margin-top: 20px;
     margin-left: 40px;
+    width: 15%;
   }
 
   .cards {

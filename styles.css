@@ -70,6 +70,10 @@ body {
   margin-right: 24px;
 }
 
+.close {
+  cursor: pointer;
+}
+
 /* Main page */
 
 .main {
@@ -134,23 +138,24 @@ ul {
 .socialicons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 19px;
   background-color: #fff;
-  width: 25%;
+  width: 45%;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .socialicons a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px; /* Ancho y alto iguales a las imágenes */
-  height: 35px; /* Ancho y alto iguales a las imágenes */
+  margin: 10px;
 }
 
 .socialicons img {
-  width: 20px;
-  height: 20px;
+  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  max-height: 100%;
 }
 
 /* Projects section */
@@ -770,7 +775,7 @@ textarea::placeholder {
     display: flex;
     margin-top: 20px;
     margin-left: 40px;
-    width: 15%;
+    width: 25%;
   }
 
   .cards {

@@ -1,13 +1,14 @@
 // Toggle menu
 const hamburger = document.querySelector('.hamburger');
 const modalMenu = document.querySelector('.nav-items');
+const closeIcon = document.querySelector('.close');
 
 hamburger.addEventListener('click', () => {
   modalMenu.style.left = modalMenu.style.left === '0' ? '-100%' : 0;
 });
 
 modalMenu.addEventListener('click', (event) => {
-  if (event.target.classList.contains('close')) {
+  if (event.target.closest('.close')) {
     modalMenu.style.left = '-100%';
   }
 });

@@ -114,13 +114,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: 24px;
 }
 
 .lets-connect {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
   margin-left: 40px;
 }
 

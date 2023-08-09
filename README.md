@@ -1,45 +1,128 @@
-# Alejandra Keber - Portfolio
+<div align="center">
+  <h1><b>Alejandra Keber - Portfolio</b></h1>
+</div>
 
-Portfolio based in Figma Template 1
+# 📗 Table of Contents
 
-**Built With:**
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# Alejandra Keber - Portfolio <a name="about-project"></a>
+**Portfolio** is a website that shows my personal information, my projects and my contact information.
+
+## 🛠 Built With <a name="built-with"></a>
 
 Javascript, HTML and CSS
 
-**Getting started:**
+<!-- Features -->
 
-- Git clone the repository to your local machine:
-```
-git clone git@github.com:AlejandraKeber/Project-setup-and-mobile-main.git
-cd Project-setup-and-mobile-main
+### Key Features <a name="key-features"></a>
+
+- **Portfolio section with pojects details**
+- **About myself section**
+- **Contact me section**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://alejandrakeber.github.io/Portfolio/)
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+- Visual Studio Code or any other code editor you prefer
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+git clone https://github.com/AlejandraKeber/Portfolio.git
+cd Portfolio
 ```
 - Open the folder with you code editor
 
-**Deployment:**
-- Please go to this link to deploy the webpage: [Portfolio](https://alejandrakeber.github.io/Portfolio/)
+### Usage
 
-**Authors**
+- Open the index.html file with your browser
 
-👤 Autor1: Alejandra Keber Maggi 
-- [GitHub:](https://github.com/AlejandraKeber) @AlejandraKeber
-- Twitter: @KeberAlejandra
-- [LinkedIn:](www.linkedin.com/in/alejandra-keber) Alejandra Keber
+<!-- AUTHORS -->
 
-👤 Autor2: Mahdia
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## 👥 Authors <a name="authors"></a>
 
-🤝 Contributing
+👤 **Alejandra Keber Maggi**
+- GitHub: [@AlejandraKeber](https://github.com/AlejandraKeber)
+- Twitter: [@KeberAlejandra](https://twitter.com/KeberAlejandra)
+- LinkedIn: [alejandra-keber](https://www.linkedin.com/in/alejandra-keber)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Update with new projects**
+- [ ] **Use React or other framework**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](https://github.com/AlejandraKeber/Portfolio/issues).
 
-Show your support
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-📝 License
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give it a star ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank 
+- [Microverse](https://www.microverse.org/) for the opportunity.
+- Code Reviewers
+- Coding Partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

@@ -84,12 +84,12 @@ body {
     radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
     radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
   border-bottom-left-radius: 60px;
-  height: 588px;
+  height: 850px;
 }
 
 .intro {
   text-align: center;
-  padding-top: 50px;
+  padding: 20px 24px;
   margin: 0 24px;
 }
 
@@ -99,8 +99,8 @@ body {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  padding-top: 100px;
-  margin: 0 24px;
+  padding: 40px 24px;
+  margin: 24px;
   display: flex;
   justify-content: center;
 }
@@ -114,6 +114,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 24px;
 }
 
 .lets-connect {
@@ -154,7 +155,7 @@ ul {
 }
 
 .socialicons img {
-  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  max-width: 100%;
   max-height: 100%;
 }
 

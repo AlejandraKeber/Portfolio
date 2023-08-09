@@ -1,7 +1,6 @@
 // Toggle menu
 const hamburger = document.querySelector('.hamburger');
 const modalMenu = document.querySelector('.nav-items');
-const closeIcon = document.querySelector('.close');
 
 hamburger.addEventListener('click', () => {
   modalMenu.style.left = modalMenu.style.left === '0' ? '-100%' : 0;
@@ -62,7 +61,7 @@ const projects = [
 ];
 
 // Create project element
-function createProjectElement(project, index) {
+function createProjectElement(project) {
   const {
     title,
     details,
@@ -83,11 +82,11 @@ function createProjectElement(project, index) {
         <div class="projectdetails">
           <h2 class="projecttitle">${title}</h2>
           <ul class="projectdet">
-            ${details.map(detail => `<li><p>${detail}</p></li>`).join('')}
+            ${details.map((detail) => `<li><p>${detail}</p></li>`).join('')}
           </ul>
           <p class="headlinecont_work">${description}</p>
           <ul class="smallbuttons">
-            ${tec.map(tech => `<li class="button_small">${tech}</li>`).join('')}
+            ${tec.map((tech) => `<li class="button_small">${tech}</li>`).join('')}
           </ul>
           <button class="button_big" type="button" 
             data-title="${title}" 
@@ -130,8 +129,8 @@ document.querySelectorAll('.button_big').forEach((button, index) => {
     modalPopup.querySelector('.jobdescription').textContent = jobDescriptionText;
     modalPopup.querySelector('.year').textContent = yearText;
 
-    popTech.innerHTML = project.tec.map(tech => `<button class="pop-button-small" type="button">${tech}</button>`).join('');
-    
+    popTech.innerHTML = project.tec.map((tech) => `<button class="pop-button-small" type="button">${tech}</button>`).join('');
+
     modalPopup.style.display = 'block';
   });
 });

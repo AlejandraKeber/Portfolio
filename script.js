@@ -17,8 +17,8 @@ const projects = [
   {
     title: 'Videogames rental',
     details: ['MICROVERSE', 'Full Stack Dev', '2023'],
-    description: 'This is a group project for the final module at Microverse. It is based on a videogames rental app.  The front-end is developed in React and the back-end is developed in Ruby on Rails.',
-    popupdescription: 'This app is the implementation of the final capstone group from Microverse. It is an application that let the user rent a videogame. It also let the admins create new video games or delete them. The front end is developed in React and the back end is developed in Ruby on Rails',
+    description: 'A Full-Stack project created with React, Ruby on Rails, Postgresql and Redux that offers videogames for rent. The user can create a new account and log in with email and password.  Admin user can create and delete videogames',
+    popupdescription: 'This app is the implementation of the final capstone group from Microverse. It is Full-Stack project created with React, Ruby on Rails, Postgresql and Redux that offers videogames for rent. The user can create a new account and log in with email and password. It also let the admins create new video games or delete them.',
     tec: ['React', 'Ruby on Rails', 'CSS'],
     image: './Images/Works/videogamesdesk.png',
     link: 'https://www.github.com',

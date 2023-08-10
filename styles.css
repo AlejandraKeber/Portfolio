@@ -60,7 +60,8 @@ body {
 }
 
 .box1:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .hamburger {
@@ -134,7 +135,7 @@ body {
 .lets-connect {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .footer {
@@ -215,7 +216,8 @@ ul {
 }
 
 .projecttitle:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .projectdet {
@@ -280,11 +282,13 @@ ul {
   color: #396df2;
   font-size: 17px;
   font-weight: 700;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .button_big:hover {
   color: #fff;
   background-color: #6070ff;
+  cursor: pointer;
 }
 
 /* About section */
@@ -316,6 +320,12 @@ ul {
   margin-left: 40px;
   margin-top: 100px;
   display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.final-headline:hover {
+  transform: scale(1.05);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .final-cont {
@@ -369,11 +379,13 @@ ul {
   font-weight: 700;
   margin-left: 40px;
   margin-top: 20px;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .button_resume:hover {
   color: #fff;
   background-color: #6070ff;
+  cursor: pointer;
 }
 
 .about-myself-languages {
@@ -548,6 +560,11 @@ ul {
 .poplinks a {
   display: flex;
   align-items: center;
+}
+
+.poplinks a:hover {
+  color: #fff;
+  background-color: #6070ff;
 }
 
 .popbutton-big {
@@ -798,7 +815,7 @@ textarea::placeholder {
     line-height: 28px;
     display: flex;
     justify-content: center;
-    max-width: 85%;
+    max-width: 92%;
     margin: 0 auto;
   }
 
@@ -919,7 +936,7 @@ textarea::placeholder {
   }
 
   .smallbuttons {
-    margin: 10px 2px 10px 30px;
+    margin: 10px 2px 10px 0;
   }
 
   .popbutton-big {

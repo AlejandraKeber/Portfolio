@@ -28,7 +28,7 @@ const projects = [
   {
     title: 'Crypto Currency',
     details: ['MICROVERSE', 'Front End Dev', '2023'],
-    description: 'App to check a list of metrics for crypto currency. completed and deleted them. It also allows you to select and delete all the tasks that are completed. It is a SPA that fetch currency data from an API and display main information in the home page and more detailed information in the details page.',
+    description: 'App to check a list of metrics for crypto currency. It is a SPA that fetch currency data from an API and display main information in the home page and more detailed information in the details page.',
     popupdescription: 'This is a mobile web application to check a list of metrics for crypto currency. It is a SPA that fetch currency data from an API and display main information in the home page and more detailed information in the details page. Developed using React, Redux, JavaScript, HTML and CSS.',
     tec: ['React', 'Redux', 'HTML', 'CSS'],
     image: './Images/Works/cryptocurrencydesk.png',
